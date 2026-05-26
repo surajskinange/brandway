@@ -1,0 +1,310 @@
+/**-------------------------------------------------
+  01. MAIN MENU CSS
+----------------------------------------------------
+  3.1 Menu Style
+  3.2 Menu Style
+----------------------------------------------------*/
+
+/*--------------------
+3.1 Menu Style
+--------------------*/
+.navbar {
+    background: transparent;
+}
+
+.main-menu .nav-menu-wrapper {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.main-menu .nav-menu-wrapper > ul {
+    align-items: baseline;
+    display: inline-flex;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    margin: 0 5px;
+    font-size: 18px;
+    padding: 10px var(--bs-navbar-nav-link-padding-x) !important;
+}
+
+.nav-item.dropdown .list-unstyled li:hover a,
+.navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+    color: var(--accent-color) !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-expand-lg li.nav-item.dropdown ul.dropdown-menu {
+    background: #fff;
+    padding: 20px;
+    top: 100%;
+    width: 300px;
+    display: block !important;
+    position: absolute;
+    inset-inline-start: 0;
+    z-index: 99;
+    text-align: start;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+    gap: 0;
+    pointer-events: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: none;
+}
+
+.navbar-expand-lg li.nav-item.dropdown:hover ul.dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    pointer-events: inherit;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item {
+    background: transparent !important;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.dropdown-toggle::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-weight: 30;
+    font-size: 12px;
+    left: 3px;
+    top: 3px;
+    border: none;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-menu.show {
+    -webkit-animation: fadeIn 0.3s alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: fadeIn 0.3s alternate;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler .hamburger-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    z-index: 11;
+    float: right;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    border-radius: 2px;
+    z-index: 1;
+    transition:
+        transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+        all 0.2s ease-in-out;
+    left: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:first-child {
+    top: 10%;
+    transform-origin: 50% 50%;
+    transform: translate(0% -50%) !important;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:last-child {
+    left: 0px;
+    top: auto;
+    bottom: 10%;
+    transform-origin: 50% 50%;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span {
+    position: absolute;
+    margin: 0;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+    top: 45%;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+    left: 50%;
+    width: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+/*--------------------
+3.2 Menu Style
+--------------------*/
+header.main-header.header-02 .navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    font-size: 16px;
+        padding-left: 25px !important;
+}
+
+/************************************/
+/***      Menu Responsive css      ***/
+/************************************/
+
+@media only screen and (max-width: 991px) {
+    header.main-header.header-02 .hamburger-toggle .hamburger span {
+        background: #000000;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header.header {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    header.header nav.navbar {
+        margin: 0 !important;
+        padding: 5px;
+        background: transparent !important;
+    }
+
+    header.main-header.header-02 .hamburger-toggle .hamburger span {
+        background: #000000;
+    }
+
+    div#navbar-content.main-menu {
+        position: absolute;
+        width: 110%;
+        padding: 0;
+        background: var(--accent-color);
+        background-size: 200% auto;
+        top: 70px;
+        left: -20px;
+    }
+
+    div#navbar-content.collapse.show {
+        display: block;
+    }
+
+    .main-menu .nav-menu-wrapper > ul {
+        display: inline;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0;
+        padding: 10px var(--bs-navbar-nav-link-padding-x) !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-item.dropdown .list-unstyled li:hover a,
+    .navbar-nav .nav-link:hover,
+    .dropdown-item:hover {
+        color: #fff !important;
+    }
+
+    .navbar-expand-lg li.nav-item.dropdown ul.dropdown-menu {
+        background: rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        display: none !important;
+        opacity: 1;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        visibility: visible;
+        box-shadow: none !important;
+        transform: unset;
+    }
+
+    .navbar-expand-lg li.nav-item.dropdown ul.dropdown-menu.show {
+        display: block !important;
+    }
+
+    .navbar-expand-lg li.nav-item.dropdown ul.dropdown-menu li a {
+        color: #fff;
+    }
+
+    .header-btn {
+        padding: 20px 30px;
+        border-top: 1px solid var(--divider-color);
+        margin-top: 15px;
+    }
+
+    .header-btn a.btn.btn-primary {
+        background: var(--primary-color);
+    }
+
+    header.main-header.header.header-02 {
+        padding: 0 5px;
+    }
+
+    .header-02 div#navbar-content.main-menu {
+        background: #fff;
+        top: 70px;
+    }
+    .header-02 .navbar-expand-lg li.nav-item.dropdown ul.dropdown-menu li a {
+        color: var(--primary-color);
+    }
+}

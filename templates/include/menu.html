@@ -1,0 +1,96 @@
+{% load static %}
+<header class="main-header header header-02">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <!-- Logo Start-->
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'assets/images/logo/logo-black.png' %}" alt="Logo">
+            </a>
+            <!-- Logo End-->
+            <!-- Mobile Toggle -->
+            <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-content"
+            >
+                <span class="hamburger-toggle">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+            </button>
+            <!-- Mobile Toggle End -->
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse main-menu" id="navbar-content">
+                <div class="nav-menu-wrapper">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <i class="fa fa-fw fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">
+                                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-server" aria-hidden="true"></i>
+                                Our Services
+                                <i class="bx bx-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="e-commerce-plans.html" class="nav-link">Marketplace Management</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="digital-marketing-service.html" class="nav-link">Digital Marketing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="influncera-plans.html" class="nav-link">Influencer Marketing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="website-designing-service.html" class="nav-link">Website Design</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="marketing-plans.html" class="nav-link">Marketplace Branding</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="branding-plans.html" class="nav-link">Branding Plans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="branding-plans-advance.html" class="nav-link">360 Marketing Plans</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">
+                                <i class="fa-solid fa-box"></i>
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                <i class="fa fa-fw fa-envelope"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Get a Demo Button -->
+                <div class="header-btn">
+                    <a class="btn btn-dark" href="contact.html">
+                        Get A Demo
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,784 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'include/header.html' %}
+    <body>
+        <!-- Preloader Start -->
+        <div class="preloader">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div id="loading-icon">
+                    <img src="{% static 'assets/images/loader.svg' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+        <!-- Header Start -->
+        {% include 'include/menu.html' %}
+        <!-- Header End -->
+        <!-- Hero Section Start-->
+        <section class="stratum-hero-section">
+            <div class="container">
+                <!-- Hero Content Start-->
+                <div class="hero-content">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1 class="wow fadeInUp mb-4">
+                                From Idea to Online Success
+                                <img src="{% static 'assets/images/hero-shap03.png' %}" alt="">
+                            </h1>
+                            <span class="wow fadeInUp mb-3 mt-2">
+                                Brandway helps businesses and online sellers grow faster with powerful websites, smart digital marketing, and complete e-commerce management solutions designed to build strong and successful brands online.
+                            </span>
+                            <div class="row align-items-center">
+                                <div class="top-category mt-3  d-flex justify-content-start mb-4 wow fadeInUp">
+                                    <span>Digital Marketing</span>
+                                    <span>Marketplace Management</span>
+                                    <span>Influencer Marketing</span>
+                                    <span>Branding & Promotion</span>
+                                    <span>Social Media Marketing</span>
+                                    <span>360° Marketing Solutions</span>
+                                </div>
+                                <!-- Button full width -->
+                                <div class="col-md-12 mt-3 wow zoomIn">
+                                    <a class="btn btn-dark px-5 py-3" href="contact.html">
+                                        Contact Us Today!
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 wow zoomIn hide-m">
+                            <img src="{% static 'assets/images/brand-meeting.jpg' %}" alt="" class="object-fit-cover w-100 h-100 brand-meeting">
+                        </div>
+                    </div>
+                    <!-- Hero Content End -->
+                </div>
+            </div>
+            <div class="rotate-social-link">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://x.com/">twitter</a>
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://www.linkedin.com/">linkedin</a>
+            </div>
+        </section>
+        <section class="brand-tickers">
+            <div class="ticker-brand-text">
+                <div class="ticker-brand" data-mf-ticker>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Growth-Driven Digital Marketing</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>High-Converting Website Design</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Performance Marketing Solutions</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Brand Building & Online Growth</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Conversion-Focused Web Solutions</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Social Media Growth Strategy</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>Influencer Marketing Campaigns</strong>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="{% static 'assets/images/icons/icon-star.png' %}" alt="">
+                        <strong>360° Digital Marketing Services</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End-->
+        <!-- About and Feature Start -->
+        <section class="about-section section-row">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-9 col-md-12 col-sm-12 wow fadeInUp">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp">
+                                WE HELP BUSINESSES GROW FASTER WITH SMART DIGITAL STRATEGIES.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 wow fadeInLeft text-end">
+                        <a class="btn btn-dark" href="contact.html">
+                            Get Started!
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Image -->
+                    <div class="col-lg-4 col-md-6 wow fadeInLeft">
+                        <img src="{% static 'assets/images/2148868425.jpg' %}" class="object-fit-cover w-100 h-100 img-fluid rounded-4" alt="">
+                    </div>
+                    <!-- Left Cards -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="about-us-item bg-grey rounded-4 mb-4">
+                            <div class="customers wow fadeInUp">
+                                <strong class="h4 fw-semibold mb-3">
+                                    Real growth. Real results. Brandway delivers measurable success.
+                                </strong>
+                                <p class="mb-0" style="color: black;">
+                                    We help businesses increase traffic, generate quality leads, 
+                    and build strong online visibility with proven digital strategies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-us-item bg-grey wow fadeInUp rounded-4">
+                            <strong class="h4 fw-semibold mb-3">
+                                Where marketing, design, branding and technology work together.
+                            </strong>
+                            <p class="mb-3" style="color: black;">
+                                Our team combines creativity and strategy to build powerful websites,
+                strong brands, and result-driven marketing campaigns.
+                            </p>
+                            <img src="{% static 'assets/images/banner-03.jpg' %}" class="img-fluid rounded-4 mt-1 dev-meet" alt="">
+                        </div>
+                    </div>
+                    <!-- Right Cards -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="about-us-item bg-grey wow fadeInRight rounded-4 mb-4">
+                            <strong class="h4 fw-semibold mb-3">
+                                Businesses trust Brandway to increase visibility, generate more leads and grow faster online.
+                            </strong>
+                            <p class="mb-3" style="color: black;">
+                                From startups to growing brands, we focus on long-term results
+                that help your business scale in the digital world.
+                            </p>
+                        </div>
+                        <div class="about-us-item bg-grey wow fadeInRight rounded-4">
+                            <strong class="h4 fw-semibold mb-3">
+                                Trusted by startups, e-commerce sellers and growing brands for long-term digital success.
+                            </strong>
+                            <p class="mb-3" style="color: black;">
+                                Our clients choose us for reliability, transparency, and consistent performance
+                across digital marketing and website solutions.
+                            </p>
+                            <strong class="h4 fw-semibold mb-1">4.9/5</strong>
+                            <div class="text-warning fs-5 mt-1">
+                                <div class="star-icon small d-flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About and Feature End -->
+        <!-- Top Banner Start -->
+        <section class="top-banner wow fadeInUp">
+            <div
+                class="banner-thumb"
+                data-mf-parallax
+                data-mf-parallax-speed="1.5"
+                data-mf-parallax-speed-tablet="1.25"
+                data-mf-parallax-speed-mobile="1"
+            >
+                <img src="{% static 'assets/images/banner-02.jpg' %}" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+        </section>
+        <!-- Top Banner End -->
+        <!-- Collaborating Start -->
+        <section class="collaborating section-row">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-8 wow fadeInUp">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp text-white">
+                                Why Choose Brandway – Your Trusted Digital Marketing Partner
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <a class="btn btn-light" href="contact.html">
+                            Contact Us
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="steup-item">
+                            <img src="{% static 'assets/images/icons/icon-1.png' %}" alt="">
+                            <h4 class="brand-h4 text-white">Customer Focus</h4>
+                            <p class="text-white">We understand your business and create result-driven digital marketing strategies.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="steup-item">
+                            <img src="{% static 'assets/images/icons/icon-2.png' %}" alt="">
+                            <h4 class="brand-h4 text-white">Advanced SEO</h4>
+                            <p class="text-white">We use modern SEO techniques to improve rankings and increase website traffic.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="steup-item">
+                            <img src="{% static 'assets/images/icons/icon-3.png' %}" alt="">
+                            <h4 class="brand-h4 text-white">Expert Team</h4>
+                            <p class="text-white">Our designers, developers, and marketers work together for your business growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="steup-item">
+                            <img src="{% static 'assets/images/icons/icon-4.png' %}" alt="">
+                            <h4 class="brand-h4 text-white">Affordable Services</h4>
+                            <p class="text-white">We provide high-quality digital marketing services at affordable pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Collaborating End -->
+        <!-- Capabilities Section Start-->
+        <section class="capabilities section-row">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 wow fadeInUp">
+                        <div class="section-title text-center">
+                            <h2 class="wow fadeInUp">
+                                Our Capabilities for Innovative Software & eCommerce Development
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Service 01 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service h-100 rounded-4">
+                            <span class="fw-semibold">01</span>
+                            <img src="{% static 'assets/images/services/service01.jpg' %}" alt="Custom software development services for eCommerce businesses" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Custom Software Development</h3>
+                            <p class="mb-4">
+                                We build scalable, high-performance custom software solutions tailored for eCommerce businesses — including Amazon seller tools, Flipkart vendor dashboards, inventory management systems, and enterprise-grade SaaS platforms that automate and accelerate your growth.
+                            </p>
+                            <a class="fw-semibold text-dark read-more d-flex" href="services-details.html">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 02 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service service-bg2 h-100 rounded-4">
+                            <span class="fw-semibold">02</span>
+                            <img src="{% static 'assets/images/services/service02.jpg' %}" alt="Web app development for Amazon and Flipkart marketplace sellers" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Web App Development</h3>
+                            <p class="mb-4">
+                                From Amazon Seller Central integrations to Flipkart marketplace management portals, we develop fast, responsive, SEO-optimised web applications — custom-built to manage product listings, orders, pricing, and analytics all in one powerful platform.
+                            </p>
+                            <a class="fw-semibold text-dark d-flex read-more" href="services-details.html">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 03 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service service-bg3 h-100 rounded-4">
+                            <span class="fw-semibold">03</span>
+                            <img src="{% static 'assets/images/services/service03.jpg' %}" alt="Mobile app development for eCommerce sellers on Amazon and Flipkart" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Mobile App Development</h3>
+                            <p class="mb-4">
+                                We design and develop powerful iOS and Android mobile apps for eCommerce sellers — enabling real-time Amazon order tracking, Flipkart inventory alerts, customer management, and sales reporting directly from your smartphone, anywhere, anytime.
+                            </p>
+                            <a class="fw-semibold text-dark d-flex read-more" href="services-details.html">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 04 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service service-bg4 h-100 rounded-4">
+                            <span class="fw-semibold">04</span>
+                            <img src="{% static 'assets/images/services/service04.jpg' %}" alt="Generative AI development for Amazon and Flipkart eCommerce automation" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Generative AI Development</h3>
+                            <p class="mb-4">
+                                Supercharge your Amazon and Flipkart business with AI — automated product description generation, AI-powered pricing strategies, smart review analysis, demand forecasting, and intelligent chatbots that boost conversions and reduce operational costs.
+                            </p>
+                            <a class="fw-semibold text-dark d-flex read-more" href="services-details.html">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 05 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service service-bg5 h-100 rounded-4">
+                            <span class="fw-semibold">05</span>
+                            <img src="{% static 'assets/images/services/service05.jpg' %}" alt="Amazon and Flipkart marketplace management services India" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Marketplace Management</h3>
+                            <p class="mb-4">
+                                We provide end-to-end Amazon and Flipkart marketplace management — from product listing optimisation, keyword-rich catalog creation, and A+ content to account health monitoring, sponsored ads management, and sales growth strategies that maximise your ROI.
+                            </p>
+                            <a class="fw-semibold text-dark d-flex read-more" href="https://cruzendigital.com/digital-marketing-plans.php">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 06 -->
+                    <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp">
+                        <div class="our-service service-bg6 h-100 rounded-4">
+                            <span class="fw-semibold">06</span>
+                            <img src="{% static 'assets/images/services/service06.jpg' %}" alt="Brand identity and branding services for eCommerce and digital businesses" class="img-fluid rounded-4">
+                            <h3 class="mt-5 mb-3">Branding Your Brand</h3>
+                            <p class="mb-4">
+                                Build a powerful, memorable brand identity that stands out on Amazon, Flipkart, and beyond — from logo design, brand guidelines, and packaging to Amazon Brand Store setup, brand storytelling, and complete visual identity creation that drives customer trust and loyalty.
+                            </p>
+                            <a class="fw-semibold text-dark d-flex read-more" href="https://cruzendigital.com/Branding%20Basic%20Plan.php">
+                                Read more
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Capabilities Section End -->
+        <!-- Testimonial Start -->
+        <!-- Testimonial Start -->
+        <section class="testimonials-section mt-0 section-row">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="section-title text-center">
+                        <h2 class="wow fadeInUp">
+                            Hear What Our Happy Clients Say About Their eCommerce Success
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-wrap swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                Amazon Seller
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Sales Doubled on Amazon Within 3 Months!
+                            </strong>
+                            <p class="text-muted">
+                                Brandway ne hamari Amazon listing completely optimize kar di. Pehle hamare products page 5-6 pe the, ab consistently page 1 pe aate hain. Our monthly sales went from ₹1.2L to ₹3.8L. Bahut hi professional team hai — highly recommended!
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">RA</div>
+                                <div>
+                                    <strong>Rahul Agarwal</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">Amazon FBA Seller, Jaipur</span>
+                                    <span class="t-platform">🛒 Amazon.in Account Handler</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                Flipkart Seller
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Flipkart Account Ko New Life Mili!
+                            </strong>
+                            <p class="text-muted">
+                                Hamari Flipkart account health bahut kharab thi — negative reviews, low ratings, listing suppressions. Brandway ki team ne sab kuch handle kiya. Ab 4.6★ rating hai aur orders roz aa rahe hain. Best decision tha unhe hire karna.
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">PM</div>
+                                <div>
+                                    <strong>Priya Mehta</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">Flipkart Preferred Seller, Surat</span>
+                                    <span class="t-platform">🛍️ Flipkart Account Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                D2C Brand Owner
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Hamare Brand Ki Online Pehchaan Ban Gayi!
+                            </strong>
+                            <p class="text-muted">
+                                We were struggling to establish our ethnic wear brand on Amazon. Brandway built our A+ content, brand store, and started sponsored ads. In just 60 days hamara brand search pe aane laga aur ROAS 4x ho gaya. Kamaal ka kaam karte hain yeh log!
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">VS</div>
+                                <div>
+                                    <strong>Vikram Singh Rathore</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">D2C Brand Founder, Jodhpur</span>
+                                    <span class="t-platform">🏪 Amazon Brand Store Setup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                eCommerce Seller
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Return Rate Kam Hua, Profit Zyada Hua!
+                            </strong>
+                            <p class="text-muted">
+                                Pehle hamara return rate 18% tha due to bad product images and wrong descriptions. Brandway ne catalog revamp kiya — professional photos, clear specs, keyword-rich titles. Ab return rate sirf 4% hai. Revenue impact is real and measurable.
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">AK</div>
+                                <div>
+                                    <strong>Ananya Krishnamurthy</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">Multi-category Seller, Bengaluru</span>
+                                    <span class="t-platform">📦 Amazon & Meesho Catalog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                Grocery & FMCG
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Amazon Quick Commerce Mein Entry Ho Gayi!
+                            </strong>
+                            <p class="text-muted">
+                                Brandway helped us list on Amazon Fresh and Blinkit. Their team handled everything — compliance, packaging guidelines, and pricing strategy. Ab hum Delhi NCR mein top sellers hain grocery category mein. Unke bina yeh sab possible nahi tha.
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">DJ</div>
+                                <div>
+                                    <strong>Deepak Joshi</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">FMCG Distributor, Noida</span>
+                                    <span class="t-platform">🥬 Amazon Fresh & Quick Commerce</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <span class="t-badge">
+                                <i class="fa-solid fa-certificate"></i>
+                                Handicrafts Seller
+                            </span>
+                            <div class="star-icon text-warning d-flex mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold text-decoration-underline pt-3 pb-3 d-block">
+                                Global Buyers Tak Pahuncha Hamara Product!
+                            </strong>
+                            <p class="text-muted">
+                                Brandway ne hamare handmade brass idols ko Amazon Global Selling pe list karaya. Pehle sirf local market tha, ab USA aur UK se orders aa rahe hain. Exports shuru ho gaye hain. Yeh sach mein game-changer raha hamare business ke liye.
+                            </p>
+                            <hr>
+                            <div class="client-info d-flex align-items-center mt-3">
+                                <div class="t-avatar me-3">SD</div>
+                                <div>
+                                    <strong>Sunita Devi Sharma</strong>
+                                    <span class="text-muted d-block" style="font-size:13px;">Artisan Seller, Moradabad</span>
+                                    <span class="t-platform">🌍 Amazon Global Selling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination testimonials-pagination"></div>
+            </div>
+        </section>
+        <!-- Testimonial End -->
+        <!-- Testimonial End -->
+        <!-- Transforming Ideas -->
+        <section class="transforming-ideas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp mb-5 text-white" data-wow-delay="0.2s">
+                                We Help Brands Grow Faster & Sell Smarter Online!
+                            </h2>
+                        </div>
+                        <!-- Accordion -->
+                        <div class="accordion accordion-flush wow fadeInUp" id="featureAccordion" data-wow-delay="0.4s">
+                            <!-- Item 01 -->
+                            <div class="accordion-item border-top">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#featureOne"
+                                    >
+                                        <span class="me-4 fw-bold">01</span>
+                                        Growth-Driven Digital Experts
+                                    </button>
+                                </h2>
+                                <div id="featureOne" class="accordion-collapse collapse show" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        Brandway is a team of passionate digital growth specialists who combine creativity, data, and strategy to help businesses and online sellers build powerful brands, increase visibility, and dominate their market online.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 02 -->
+                            <div class="accordion-item border-top">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#featureTwo"
+                                    >
+                                        <span class="me-4 fw-bold">02</span>
+                                        Powerful Websites That Convert
+                                    </button>
+                                </h2>
+                                <div id="featureTwo" class="accordion-collapse collapse" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        We design and develop high-performance, SEO-friendly websites built to attract the right audience, turn visitors into loyal customers, and strengthen your brand's online presence from day one.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 03 -->
+                            <div class="accordion-item border-top">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#featureThree"
+                                    >
+                                        <span class="me-4 fw-bold">03</span>
+                                        Complete E-Commerce & Brand Management
+                                    </button>
+                                </h2>
+                                <div id="featureThree" class="accordion-collapse collapse" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        From marketplace management and product listings to branding and promotions, Brandway handles everything so you can focus on growing your business while we manage your entire online success story.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 04 -->
+                            <div class="accordion-item border-top">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#featureFour"
+                                    >
+                                        <span class="me-4 fw-bold">04</span>
+                                        360° Marketing & Long-Term Success
+                                    </button>
+                                </h2>
+                                <div id="featureFour" class="accordion-collapse collapse" data-bs-parent="#featureAccordion">
+                                    <div class="accordion-body">
+                                        With smart digital marketing, influencer collaborations, social media growth, and ongoing brand support, Brandway delivers a 360° approach that keeps your business visible, competitive, and profitable — always.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'assets/images/Ideas.jpg' %}" alt="" class="h-100 object-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Transforming Ideas End -->
+        <!-- CTA App-->
+        <section class="cta-app-download section-row">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="section-title text-end">
+                            <h2 class="wow fadeInUp mb-3" data-wow-delay="0.2s">Building products with passion that customers genuinely love.</h2>
+                            <p class="fw-semibold mb-4 wow fadeInUp">
+                                Download the Nexo app on your mobile device.
+                            </p>
+                        </div>
+                        <!-- Buttons -->
+                        <div class="d-flex gap-3 justify-content-end">
+                            <a href="#" class="wow zoomIn">
+                                <img src="{% static 'assets/images/app-store.png' %}" alt="" data-cursor-text="View">
+                            </a>
+                            <a href="#" class="wow zoomIn">
+                                <img src="{% static 'assets/images/google-play.png' %}" alt="" data-cursor-text="View">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 hide-m">
+                        <img src="{% static 'assets/images/investment-phone.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA App End-->
+        <!-- Our Blog Start-->
+        <section class="our-blog no-bg-color section-row">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp mb-1" data-wow-delay="0.2s">Insights, ideas, and creative perspectives!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp text-end" data-wow-delay="0.4s">
+                        <a class="btn btn-dark" href="blog-grid.html">
+                            Read All Posts
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-section mt-5">
+                    <div class="row g-4">
+                        <!-- Blog Card 1 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-card">
+                                <div class="blog-img rounded-4">
+                                    <a href="#">
+                                        <img src="{% static 'assets/images/blog/blog-1.jpg' %}" class="img-fluid rounded-4" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content pt-4">
+                                    <div class="d-flex justify-content-between text-muted">
+                                        <small>20 Jan 2026</small>
+                                        <small>04 min read</small>
+                                    </div>
+                                    <h3 class="fw-bold mt-3 mb-3">
+                                        <a href="#" class="text-dark">Smart design systems: the next era of innovation.</a>
+                                    </h3>
+                                    <a class="read-more text-dark" href="blog-details.html">
+                                        Read more
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Card 2 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-card">
+                                <div class="blog-img rounded-4">
+                                    <a href="#">
+                                        <img src="{% static 'assets/images/blog/blog-2.jpg' %}" class="img-fluid rounded-4" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content pt-4">
+                                    <div class="d-flex justify-content-between text-muted">
+                                        <small>22 Jan 2026</small>
+                                        <small>03 min read</small>
+                                    </div>
+                                    <h3 class="fw-bold mt-3 mb-3">
+                                        <a href="#" class="text-dark">How AI is Transforming Modern of Businesses.</a>
+                                    </h3>
+                                    <a class="read-more text-dark" href="blog-details.html">
+                                        Read more
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Card 3 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="blog-card rounded-4">
+                                <div class="blog-img rounded-4">
+                                    <a href="#">
+                                        <img src="{% static 'assets/images/blog/blog-3.jpg' %}" class="img-fluid rounded-4" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content pt-4">
+                                    <div class="d-flex justify-content-between text-muted">
+                                        <small>15 Jan 2026</small>
+                                        <small>08 min read</small>
+                                    </div>
+                                    <h3 class="fw-bold mt-3 mb-3">
+                                        <a href="#" class="text-dark">Smart design systems: the next era of innovation.</a>
+                                    </h3>
+                                    <a class="read-more text-dark" href="blog-details.html">
+                                        Read more
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Blog End-->
+    </body>
+    {% include 'include/footer.html' %}
+</html>
+
+

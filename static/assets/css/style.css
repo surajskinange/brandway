@@ -1,0 +1,2343 @@
+/* ----------------------------------------------------------------------------------------
+
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. Global Variables
+02. General CSS
+
+-----------------
+03. Header CSS
+-----------------
+  3.1 Header Style
+  3.2 Header Style
+  3.3 Header Style
+
+-----------------
+04. Home Page
+-----------------
+  4.1  Stratum Hero
+  4.2  Brand Text
+  4.3  About Section
+  4.4  Collaborating
+  4.5  Capabilities
+  4.6  Process Guesswork
+  4.7  Portfolio
+  4.8  Transforming Ideas
+  4.9  Pricing Plan
+  4.10 CTA App Download
+
+-----------------
+05. Home Page 02
+-----------------
+  5.1  Hero CSS
+  5.2  Brand CSS
+  5.3  About and Feature CSS
+  5.4  Top Banner CSS
+  5.5  Projects CSS
+  5.6  Services CSS
+  5.7  Brand Text CSS
+  5.8  Testimonials CSS
+  5.9  Our Pricing CSS
+  5.10 Our Team CSS
+  5.11 Facts Counter CSS
+  
+-----------------
+06. Home Page 03
+-----------------
+  6.1  Hero CSS
+  6.2  Services CSS
+  6.3  Collaborating Icon CSS
+  6.4  Brand Text CSS
+
+---------------------------------
+07. Blog CSS
+---------------------------------
+  7.1 Blog Style
+  7.2 Sidebar Css
+  7.3 Single Blog CSS
+  7.4 Blog Pagination CSS
+---------------------------------
+08. Footer CSS
+---------------------------------
+  8.1 Footer Style
+  8.2 Footer Style
+
+---------------------------------
+09. About Page
+---------------------------------
+  9.1 Top Section Story
+  9.2 Footer Style
+
+---------------------------------
+10. Service Page 
+---------------------------------
+  10.1 Page Subheader
+
+---------------------------------
+11. Contact Page
+---------------------------------
+  11.1 Form Fields
+-------------------------------------------------------------------------------------- */
+
+/************************************/
+/***   01. Global Variables   ***/
+/************************************/
+:root {
+  --primary-color: #000204;
+  /* --secondary-color: #c4f112; */
+  --secondary-color: #f4f7fb;
+  --text-color: #474646;
+  --accent-color: #ff5420;
+  --white-color: #ffffff;
+  --divider-color: #e8e8e8;
+  --dark-divider-color: #ffffff33;
+  --grey-bg-color: #f6f6f6;
+  --heading-color: #010a16;
+  --footer-bg: #202430;
+  --button-color: #ff5420;
+  --secondary-button: #105fae;
+  --radius-rounded: 20px;
+  --rounded-radius-style: 100px;
+  --dark-bg: #000204;
+  --dark-color: #020408;
+  --default-font: "Google Sans";
+  --secondary-font: "Phudu";
+}
+
+/************************************/
+/***     02. General CSS      ***/
+/************************************/
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;family=Phudu:wght@300..900&amp;display=swap");
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: var(--default-font);
+  color: var(--text-color);
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+a,
+object,
+ol,
+p,
+ul {
+  font-size: 100%;
+  vertical-align: baseline;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  quotes: none;
+  font-size: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+legend {
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5.h6 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.1em;
+}
+
+.btn-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: var(--button-color);
+  background-size: 200% auto;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 16px;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 15px 28px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-primary:hover {
+  background: #ff7420;
+}
+
+.btn.btn-primary i.fa-solid {
+  font-size: 12px;
+  transform: rotate(321deg);
+  background: #fff;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn.btn-dark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-size: 200% auto;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 18px 30px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn.btn-light {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-size: 200% auto;
+  border-radius: 15px;
+  font-size: 16px;
+  gap: 8px;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  padding: 18px 30px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn.btn-dark i.fa-solid {
+  font-size: 15px;
+  transform: rotate(321deg);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wow {
+  animation-duration: 1.2s;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: var(--footer-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-container,
+.loading {
+  height: 100px;
+  position: relative;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.loading-container {
+  margin: 40px auto;
+}
+
+.loading {
+  border: 1px solid transparent;
+  border-color: transparent var(--primary-color) transparent var(--white-color);
+  animation: rotate-loading 1.5s linear 0s infinite normal;
+  transform-origin: 50% 50%;
+}
+
+.loading-container:hover .loading,
+.loading-container .loading {
+  transition: all 0.5s ease-in-out;
+}
+
+#loading-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 61px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section-row {
+  padding: 50px 0;
+}
+
+.section-row .section-title.section-title-center {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title h2 {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 70px;
+  font-family: var(--secondary-font);
+}
+
+.section-title h2 span {
+  background: linear-gradient(
+    90.15deg,
+    var(--accent-color) 0%,
+    var(--accent-secondary-color) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title .title-xxl {
+  font-size: 18em;
+  letter-spacing: -3px;
+  line-height: 250px;
+}
+
+.section-title h3 {
+  font-size: 50px;
+}
+
+.panel-sticky {
+  position: sticky;
+  top: 30px;
+}
+
+.st-cursor:before {
+  background: linear-gradient(
+    90.01deg,
+    var(--accent-color) 0.26%,
+    var(--white-color) 99.99%
+  );
+}
+
+.bg-grey {
+  background: var(--grey-bg-color);
+}
+
+.w-80 {
+  max-width: 80%;
+}
+
+.no-bg-color {
+  background: transparent !important;
+}
+
+/************************************/
+/***     03. Header CSS      ***/
+/************************************/
+
+/*-------------------------------
+3.1 Header Style
+-------------------------------*/
+header.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header.header nav.navbar {
+  margin: 12px 0 0 !important;
+  box-shadow: none !important;
+  padding: 0 10px;
+  border-radius: var(--rounded-radius-style);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+header.header a.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------------------------
+3.2 Header Style
+-------------------------------*/
+header.main-header.header.header-02 {
+  border-bottom: 1px solid;
+  padding: 20px 5px;
+  background-color: var(--secondary-color);
+}
+
+header.main-header.header-02 nav.navbar {
+  background: transparent;
+  margin: 0 !important;
+}
+
+/************************************/
+/***     04. Home Page      ***/
+/************************************/
+/*-------------------------------
+4.1  Stratum Hero
+-------------------------------*/
+.stratum-hero-section {
+  position: relative;
+  padding: 170px 0 60px;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+.stratum-hero-section .rotate-social-link a {
+  color: var(--dark-color);
+}
+
+.stratum-hero-section h1 {
+  font-size: 90px;
+
+  font-weight: 700;
+}
+
+.stratum-hero-section .hero-content span {
+  font-weight: 600;
+  display: block;
+  color: #000;
+}
+
+.stratum-hero-section .hero-content .item-counter {
+  gap: 15px;
+  align-items: center;
+}
+
+.stratum-hero-section .hero-content .item-counter h2 {
+  font-size: 80px;
+  font-family: var(--secondary-font);
+  line-height: 1;
+}
+
+.stratum-hero-section .hero-content .item-counter span.counter {
+  display: inline;
+}
+
+.stratum-hero-section .hero-content .item-counter strong {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.3;
+  color: #000;
+}
+
+.stratum-hero-section .hero-content img.brand-meeting {
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-------------------------------
+4.2  Brand Text
+-------------------------------*/
+.ticker-brand-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ticker-brand-text .mf-ticker-content {
+  gap: 20px;
+}
+
+.ticker-brand-text .ticker-item {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-item strong {
+  color: #000;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+}
+
+/*-------------------------------
+4.3  About Section
+-------------------------------*/
+.about-us-item {
+  padding: 35px;
+}
+
+.about-us-item strong.fw-semibold {
+  font-family: var(--secondary-font);
+     line-height: 30px;
+    display: block;
+    font-size: 19px;
+  color: var(--primary-color);
+}
+
+.about-us-item span.h4 {
+  font-family: var(--secondary-font);
+  line-height: 1.1;
+  display: block;
+  color: var(--primary-color);
+}
+
+.about-us-item .customers ul li:last-child span {
+  background: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+/*-------------------------------
+4.4  Collaborating
+-------------------------------*/
+.collaborating {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.collaborating:after {
+  content: "";
+  background: var(--dark-bg);
+  width: 350px;
+  height: 350px;
+  border-radius: 1000px;
+  border: 50px solid var(--secondary-color);
+  position: absolute;
+  right: 0;
+  bottom: -210px;
+}
+
+/*-------------------------------
+4.5  Capabilities
+-------------------------------*/
+.capabilities .our-service {
+  background: #ebe4f7;
+  padding: 35px;
+}
+
+.capabilities .our-service.service-bg2 {
+  background: #d7ffbf;
+}
+
+.capabilities .our-service.service-bg3 {
+  background: #ffd3d3;
+}
+
+.capabilities .our-service.service-bg4 {
+  background: #ffe0b3;
+}
+
+.capabilities .our-service.service-bg5 {
+  background: #cde6ff;
+}
+
+.capabilities .our-service.service-bg6 {
+  background: #bdfcf5;
+}
+
+.capabilities .our-service span {
+  font-size: 50px;
+  display: block;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  line-height: 1;
+  margin: 0 0 40px;
+}
+
+.capabilities .our-service p {
+  color: var(--primary-color);
+}
+
+.capabilities a.read-more {
+  gap: 10px;
+  align-items: center;
+  display: inline-flex !important;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--primary-color);
+  transition: all 0.3s;
+}
+
+.capabilities a.read-more:hover {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/*-------------------------------
+4.6  Process Guesswork
+-------------------------------*/
+.process-guesswork #processAccordion {
+  border: 1px solid var(--divider-color) !important;
+}
+
+.process-guesswork #processAccordion .accordion-item {
+  background: var(--grey-bg-color) !important;
+  overflow: hidden;
+  border-radius: 0 !important;
+  border: none;
+  border-bottom: 1px solid var(--divider-color) !important;
+}
+
+.process-guesswork #processAccordion button.accordion-button {
+  background: var(--grey-bg-color);
+  padding: 25px 0;
+  font-size: 30px;
+  box-shadow: none !important;
+}
+
+.process-guesswork #processAccordion .accordion-button:focus {
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
+
+.process-guesswork #processAccordion .accordion-collapse .accordion-body {
+  padding: 15px 0 20px;
+  border: none !important;
+  font-size: 17px;
+}
+
+.process-guesswork #processAccordion .accordion-button:not(.collapsed) {
+  color: var(--heading-color);
+}
+
+.help-box span {
+  width: 75px;
+  height: 75px;
+  font-size: 35px;
+  color: var(--accent-color);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-box strong {
+  font-family: var(--secondary-font);
+  display: block;
+}
+
+/*-------------------------------
+4.7  Portfolio
+-------------------------------*/
+.portfolio-layout-02 {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.portfolio-item {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-item .project-category a {
+  background: transparent;
+  border: none;
+  color: var(--secondary-color);
+  padding: 0;
+  border-right: 1px solid #ccc;
+  border-radius: 0;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.portfolio-item .project-category a:last-child {
+  border-right: none;
+}
+
+.portfolio-item .project-thumb figure {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.portfolio-item .project-thumb img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  margin: 0;
+}
+
+.portfolio-item .project-thumb:hover figure.image-anime img {
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.project-meta-item .icon-project {
+  background: var(--grey-bg-color);
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.info {
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.info strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+/*-------------------------------
+4.8  Transforming Ideas
+-------------------------------*/
+.transforming-ideas {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+#featureAccordion button.accordion-button {
+  background: transparent;
+  font-size: 25px;
+  padding: 25px 0;
+  font-weight: 600;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#featureAccordion .accordion-item {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 0;
+}
+
+#featureAccordion .accordion-button::after {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background-size: 17px;
+  background-position: center;
+  background-color: #c4f112;
+}
+
+div#featureAccordion .accordion-body {
+  padding: 0 0 30px 0px;
+  color: #fff;
+}
+
+/*-------------------------------
+4.9  Pricing Plan
+-------------------------------*/
+.pricing-plan-02 .pricing-card {
+  background: var(--grey-bg-color);
+}
+
+.pricing-plan-02 .badge-custom {
+  background: var(--primary-color);
+}
+
+.pricing-plan-02 .feature-list li,
+.pricing-plan-02 .price {
+  color: var(--primary-color);
+}
+
+/*-------------------------------
+4.10 CTA App Download
+-------------------------------*/
+.cta-app-download {
+  background: var(--secondary-color);
+  position: relative;
+  padding: 142px 0;
+  overflow: hidden;
+}
+
+section.cta-app-download.section-row:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 400px;
+  border-radius: 1000px;
+  position: absolute;
+  left: -130px;
+  top: -40px;
+}
+
+section.cta-app-download.section-row:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+  border-radius: 1000px;
+  position: absolute;
+  right: -100px;
+  bottom: -40px;
+}
+
+.cta-app-download p.fw-semibold {
+  color: #000;
+}
+
+.cta-app-download .col-lg-4.hide-m img {
+  position: absolute;
+  right: -5px;
+  top: 10px;
+  z-index: 99;
+}
+
+/************************************/
+/***     05. Home Page 02      ***/
+/************************************/
+/*-------------------------------
+5.1 Hero CSS
+-------------------------------*/
+.hero {
+  position: relative;
+  padding: 340px 0 80px;
+  display: flex;
+  align-items: end;
+  background-color: #000204;
+  overflow: hidden;
+  margin-top: -100px;
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 100px;
+  line-height: 110px;
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  letter-spacing: -1px;
+  align-items: center;
+  flex-direction: column;
+  display: inline-flex;
+}
+
+.hero h1 span {
+  gap: 20px;
+}
+
+.top-category span {
+      background: rgb(0 0 0);
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin: 1px 3px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: white !important;
+  /* letter-spacing: 1px; */
+}
+
+.top-category {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.hero-content .banner-desc {
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-family: var(--text-font);
+  text-align: left;
+}
+
+.circle-text-img {
+  position: relative;
+  inset-inline-end: auto;
+}
+
+.circle-text-img img {
+  -webkit-animation: rotate360 20s linear infinite;
+  animation: rotate360 20s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+span.color-text {
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 0%,
+    var(--secondary-color) 50%,
+    var(--accent-color) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    var(--accent-color) 0%,
+    var(--secondary-color) 50%,
+    var(--accent-color) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  padding-right: 3px;
+}
+
+.rotate-social-link {
+  transform: rotate(-90deg) translateY(-50%);
+  bottom: 40%;
+  left: 15px;
+  position: absolute;
+  z-index: 99;
+}
+
+.rotate-social-link a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  transition: all 0.3s;
+}
+
+.rotate-social-link a:hover {
+  color: var(--accent-color);
+}
+
+/*-------------------------------
+5.2 Brand CSS
+-------------------------------*/
+section.brands-logo {
+  background: var(--dark-bg);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 50px 0;
+}
+
+.brand-logo {
+  margin: 0 10px;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+/*-------------------------------
+5.3 About and Feature CSS
+--------------------------------*/
+section.about {
+  background: var(--grey-bg-color);
+}
+
+.about span.who-we {
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 100px;
+  line-height: 1;
+  text-align: center;
+}
+
+.experience .experience-number {
+  font-size: 300px;
+  line-height: 226px;
+  letter-spacing: -15px;
+  color: var(--dark-bg);
+}
+
+.experience span {
+  font-size: 50px !important;
+  line-height: 40px;
+  color: var(--dark-bg);
+}
+
+.customers ul li {
+  line-height: 1;
+  margin-right: -20px;
+}
+
+.customers ul li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 2px #fff;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.customers ul li:last-child span {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 20px;
+  -webkit-box-shadow: 0 0 0 2px #fff;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.feature-box .icon img {
+  filter: grayscale(100%);
+  width: 100px;
+}
+
+.star-icon {
+  gap: 2px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+section.about img.about-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*-------------------------------
+5.4 Top Banner CSS
+--------------------------------*/
+
+section.top-banner {
+  width: 100%;
+  overflow: hidden;
+  height: 750px;
+}
+
+/*-------------------------------
+5.5 Projects CSS
+--------------------------------*/
+.portfolio-card {
+  border-radius: var(--radius-rounded);
+  background: var(--grey-bg-color);
+  padding: 2.1rem;
+  transition: all 0.3s;
+}
+
+.project-meta {
+  position: relative;
+  gap: 10px;
+}
+
+.project-meta span {
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  opacity: 0.5;
+}
+
+.project-meta::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 40px;
+  height: 1px;
+  width: 80%;
+  background-color: var(--divider-color);
+}
+
+.project-thumb img {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  display: block;
+  border-radius: var(--radius-rounded);
+  margin-bottom: 35px;
+  transition: all 0.3s;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-card:hover img {
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-content h3 a {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--heading-color);
+  text-transform: capitalize;
+}
+
+.project-category a {
+  font-size: 11px;
+  line-height: 1;
+  color: var(--accent-color);
+  padding: 8px 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+  background: var(--white-color);
+  text-transform: uppercase;
+  border: 1px solid var(--divider-color);
+}
+
+/*-------------------------------
+5.6 Services CSS
+--------------------------------*/
+.services {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.service-item .row {
+  padding: 25px 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-content-left {
+  transition: 0.3s;
+}
+
+.service-content-left span {
+  min-width: 80px;
+  transition: 0.3s;
+}
+
+.service-content-left .services-title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1;
+  font-family: var(--secondary-font);
+}
+
+.services-tags {
+  transition: 0.3s;
+}
+
+.services-tags span.tag {
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.service-content-right p {
+  margin-bottom: 0;
+  max-width: 520px;
+}
+
+.service-link {
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  color: var(--white-color);
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: rotate(321deg);
+  font-size: 20px;
+}
+
+.service-item .row:hover .services-tags,
+.service-item .row:hover .service-content-left {
+  transform: translateX(30px);
+}
+
+.service-item .row:hover .service-link {
+  transform: translateX(-30px);
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/*-------------------------------
+5.7 Brand Text CSS
+--------------------------------*/
+section.brand-area-text {
+  padding: 50px 0;
+  background: var(--accent-color);
+}
+
+.brand-scroll-text {
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.brand-scroll-text .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+}
+
+section.brand-area-text strong {
+  gap: 20px;
+  color: var(--white-color);
+  font-size: 60px;
+  font-family: var(--secondary-font);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+}
+
+section.brand-area-text i.fa-star-of-life {
+  font-size: 30px;
+}
+
+/*-------------------------------
+5.8 Testimonials CSS
+--------------------------------*/
+section.testimonials {
+  padding-bottom: 0;
+}
+
+.testimonials-section {
+  background: var(--grey-bg-color);
+}
+
+.testimonial-img {
+  position: relative;
+}
+
+.testimonial-img .star-icon {
+  background: #fff;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 6px 15px;
+  border-radius: 100px;
+  margin: 0;
+}
+
+.client-quote {
+  padding-left: 2.5rem;
+}
+
+.quote-icon i.fa-solid.fa-quote-left {
+  font-size: 100px;
+  color: #ddd;
+}
+
+.client-quote h4 {
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+.client-quote h6 {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.testimonials-row {
+  background: var(--grey-bg-color);
+  padding: 80px 0;
+  margin-top: 100px;
+}
+
+.testimonials-wrap {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  padding: 30px;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: black !important;
+  font-weight: 500;
+}
+
+.testimonial-card strong {
+  color: var(--primary-color);
+  font-size: 18px;
+  display: block;
+}
+
+.testimonial-card strong.fw-bold {
+  color: var(--heading-color);
+      font-size: 20px;
+    line-height: 30px;  
+}
+
+.video-thumb img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonial-playbtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  backdrop-filter: blur(14px);
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  animation: animate-pulse 3s linear infinite;
+}
+
+.testimonial-playbtn span {
+  margin-left: 2px;
+}
+
+@-webkit-keyframes animate-pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.2),
+      0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  40% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  80% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+}
+
+@keyframes animate-pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.2),
+      0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  40% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  80% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+}
+
+.testimonials-pagination {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.testimonials-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.testimonials-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 20px;
+  background: var(--accent-color);
+}
+
+.rating-review h2 {
+  font-size: 120px;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+/*-------------------------------
+5.9 Our Pricing CSS
+--------------------------------*/
+.pricing-plan {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.pricing-card {
+  border-radius: 20px;
+  border: none;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.badge-custom {
+  background: #eeeeee36;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  width: 160px;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 60px;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.pricing-disc {
+  padding-right: 10%;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/*-------------------------------
+5.10 Our Team CSS
+--------------------------------*/
+.our-team .section-title h3 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-family: var(--secondary-font);
+  line-height: 1;
+}
+
+.team-item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.team-item .team-thumb {
+  transition: all 0.3s;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.team-item:hover .team-thumb {
+  transform: scale(1.05);
+  filter: blur(6px);
+}
+
+.team-item .team-info-wrap {
+  position: absolute;
+  padding: 15px 15px;
+  left: 15px;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  right: 15px;
+  top: calc(100% - 00px);
+  background: var(--white-color);
+  align-items: center;
+  transition: all 0.3s;
+  visibility: hidden;
+}
+
+.team-item:hover .team-info-wrap {
+  top: calc(100% - 100px);
+  box-shadow: 0px 15px 12px -7px rgba(0, 0, 0, 0.1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.team-item .team-info-wrap h4.team-title {
+  margin: 0;
+  display: block;
+}
+
+/*-------------------------------
+5.11 Facts Counter CSS
+--------------------------------*/
+.our-facts-counter.section-row {
+  padding-top: 0;
+}
+
+.facts-item-counter h2 {
+  font-size: 80px;
+  font-family: var(--secondary-font);
+  line-height: 1;
+}
+
+.facts-item-counter strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/************************************/
+/***     06. Home Page 03    ***/
+/************************************/
+/*-------------------------------
+6.1 Hero CSS
+/*-----------------------------*/
+.home-layout-03 .stratum-hero-section {
+  background: url(../images/hero-bg02.jpg);
+  background-size: cover;
+  padding: 170px 0 60px;
+}
+
+.home-layout-03 .hero-content h2 {
+  font-size: 45px;
+}
+
+.home-layout-03 .stratum-hero-section h1.masked-text {
+  font-size: 370px;
+  line-height: 370px;
+  font-weight: bold;
+  color: transparent;
+  background-image: url("../images/Masked-Animation.png");
+  background-size: 200%;
+  /* Enlarged for smooth animation */
+  background-position: 0 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*-------------------------------
+6.2 Services CSS
+/*-----------------------------*/
+.service-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+}
+
+.our-service {
+  background-color: var(--dark-bg);
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.our-service-02 {
+  background: #d7ffbf;
+  top: 20px;
+}
+
+.our-service-03 {
+  background: #cde6ff;
+  top: 40px;
+}
+
+.our-service-04 {
+  background: #ffe0b3;
+  top: 60px;
+}
+
+.our-service-05 {
+  background: #ebe4f7;
+  top: 80px;
+}
+
+.service-content a.link-service {
+  color: var(--accent-color);
+}
+
+/*-------------------------------
+6.3 Collaborating Icon CSS
+/*-----------------------------*/
+.steup-item .icon i {
+  font-size: 50px;
+  color: var(--secondary-color);
+}
+
+.step-box span.step-badge {
+  background: var(--secondary-color);
+  font-weight: 50;
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 1px;
+  padding: 5px 15px 3px;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 100px;
+}
+
+/*-------------------------------
+6.4 Brand Text CSS
+/*-----------------------------*/
+.our-brand-text {
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+.our-brand-text .ticker-brand-text {
+  margin-top: 0px;
+}
+
+.our-brand-text .ticker-item strong {
+  font-size: 60px;
+}
+
+/************************************/
+/***     07. Blog CSS    ***/
+/************************************/
+
+/*-------------------------------
+7.1 Blog Style
+/*-----------------------------*/
+.our-blog {
+  background: var(--grey-bg-color);
+}
+
+.blog-img,
+.blog-card {
+  overflow: hidden;
+}
+
+.blog-img img {
+  transition: all 0.3s;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.05);
+  filter: blur(1px);
+}
+
+.blog-content h3 a {
+  font-size: 25px;
+  color: var(--heading-color);
+  transition: all 0.3s;
+  line-height: 1.2;
+}
+
+.blog-card:hover h3 a {
+  color: var(--accent-color);
+}
+
+.blog-card small {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.blog-card a.read-more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.blog-card-list .blog-content h3.fw-bold a {
+  font-size: 35px;
+}
+
+.blog-card-list.blog-card .blog-content a.read-more {
+  color: var(--accent-color);
+}
+
+/*-------------------------------
+7.2 Sidebar Css
+/*-----------------------------*/
+.sidebar-widget.search-box input.form-control {
+  padding: 18px;
+  width: 100%;
+  border: none;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  padding: 20px;
+  height: 55px;
+}
+
+.sidebar-widget.search-box button {
+  border: none;
+  background: none;
+  color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  top: 17px;
+  right: 15px;
+}
+
+.blog-catagery-list ul li {
+  border-bottom: 1px solid var(--divider-color);
+  line-height: 1.5em;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-catagery-list ul li:last-child {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+
+.blog-catagery-list ul li a {
+  position: relative;
+  display: block;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  padding-right: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-catagery-list ul li a::before {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  font-weight: 900;
+  position: absolute;
+  right: 0px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(330deg);
+}
+
+.blog-catagery-list ul li a:hover:before {
+  transform: rotate(0deg);
+  color: var(--accent-color);
+}
+
+.blog-catagery-list ul li a:hover {
+  color: var(--accent-color);
+}
+
+.recent-blog .recent-blog-post .image {
+  width: 130px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recent-blog .recent-blog-post .image img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+
+.recent-blog .recent-blog-post .content {
+  padding-left: 20px;
+}
+
+.recent-blog .recent-blog-post .content h4 a {
+  display: block;
+  list-style: 1.2;
+  color: var(--primary-color);
+}
+
+/*-------------------------------
+7.3 Single Blog CSS
+/*-----------------------------*/
+.author .text-start {
+  line-height: 1.3;
+}
+
+.post-entry blockquote {
+  border: 1px solid var(--divider-color);
+  gap: 15px;
+}
+
+.post-entry blockquote:before {
+  content: "\f10d";
+  font-size: 50px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding-top: 10px;
+  opacity: 0.5;
+}
+
+.post-entry blockquote p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: var(--primary-color);
+}
+
+.post-entry blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post-entry ul {
+  padding: 0;
+  margin: 20px 0 20px;
+  padding-left: 20px;
+}
+
+.post-entry ol li,
+.post-entry ul li {
+  position: relative;
+  line-height: 1.3em;
+  list-style: disc;
+  margin-bottom: 15px;
+}
+
+.tag-links {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-tags .tag-links a {
+  display: inline-block;
+  text-transform: capitalize;
+  line-height: 1em;
+  background: var(--grey-bg-color);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 100px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-tags .tag-links a:hover {
+  background-position: right center;
+}
+
+.post-social-sharing {
+  text-align: right;
+}
+
+.post-social-sharing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-social-sharing ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.post-social-sharing ul li:last-child {
+  margin-right: 0;
+}
+
+.post-social-sharing ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 0%,
+    var(--secondary-color) 80%,
+    var(--accent-color) 100%
+  );
+  background-size: 200% auto;
+  color: var(--white-color);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-social-sharing ul li:hover a {
+  background-position: right center;
+}
+
+.post-social-sharing ul li a i {
+  font-size: 18px;
+  color: inherit;
+}
+
+/*-------------------------------
+7.4 Blog Pagination CSS
+/*-----------------------------*/
+.pagination-wrap li.page-item a.page-link {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 4px;
+  line-height: 38px;
+  background: var(--grey-bg-color);
+  border-radius: 100px !important;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.pagination-wrap li.page-item a.page-link:hover,
+.pagination-wrap li.page-item a.page-link.active {
+  color: var(--white-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+/************************************/
+/***     08. Footer CSS    ***/
+/************************************/
+
+/*-------------------------------
+  8.1 Footer Style
+/*-----------------------------*/
+.site-footer {
+  background-color: var(--dark-bg);
+  color: var(--grey-bg-color);
+  padding: 70px 0 40px !important;
+  background-image: url(../images/hero-apttern-bg.svg);
+  background-size: cover;
+}
+
+.footer-title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.footer-text {
+  line-height: 1.7;
+}
+
+.contact p.footer-text {
+  gap: 10px;
+  line-height: 1.3;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--grey-bg-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.logo-brand-text {
+  text-transform: uppercase;
+  font-size: 195px;
+  line-height: 202px;
+  letter-spacing: -2px;
+  color: rgba(255, 255, 255, 0.04);
+  margin-bottom: -20px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+}
+
+.footer-social-media .row {
+  margin: 0;
+}
+
+.footer-social-media {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+  position: relative;
+}
+
+.footer-social-media .col-lg-2.col-md-3 {
+  padding: 0;
+}
+
+.social-link a {
+  display: block;
+  padding: 3em;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+}
+
+.social-link a:hover {
+  background: var(--accent-color);
+}
+
+.social-link i.fa-brands {
+  font-size: 60px;
+}
+
+.bottom-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottom-footer .footer-links a {
+  margin-left: 30px;
+}
+
+/*-------------------------------
+  8.2 Footer Style
+/*-----------------------------*/
+.contact-info {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lets-talk {
+  width: 130px;
+  height: 130px;
+  background: var(--secondary-color);
+  transition: all 0.3s;
+}
+
+.lets-talk:hover {
+  background: #fff;
+}
+
+.footer-newsletter-form .form-group {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+}
+
+.footer-newsletter-form .form-group .form-control {
+  width: 70%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: var(--white-color);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.footer-newsletter-form .form-group input.form-control::placeholder {
+  color: var(--white-color);
+}
+
+.footer-newsletter-form .form-group .newsletter-btn {
+  width: 30%;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  background: transparent;
+  border: none;
+  text-align: right;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-newsletter-form .form-group .newsletter-btn i {
+  font-size: 17px;
+  color: var(--secondary-color);
+  margin-left: 5px;
+}
+
+.footer-links.text-secondary a:hover {
+  color: var(--secondary-color);
+}
+
+/************************************/
+/***     09. About Page    ***/
+/************************************/
+
+/*-------------------------------
+9.1 Subheader Section
+/*-----------------------------*/
+.subheader-section {
+  background: url(../images/bg-grey-img.jpg) repeat;
+  padding: 150px 0 0;
+}
+
+/************************************/
+/***     10. Service Page    ***/
+/************************************/
+
+/*-------------------------------
+10.1 Page Subheader
+/*-----------------------------*/
+.page-subheader {
+  background: url(../images/page-subheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 0 100px;
+}
+
+.page-subheader li.breadcrumb-item a {
+  color: var(--white-color);
+}
+
+.page-subheader .breadcrumb-item.active {
+  color: var(--accent-color);
+}
+
+.page-subheader .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--white-color);
+}
+
+section.services-details {
+  padding-top: 0;
+}
+
+.services-details span.badge.bg-danger {
+  background: var(--accent-color) !important;
+}
+
+/************************************/
+/***     11. Contact Page    ***/
+/************************************/
+/*-------------------------------
+ 11.1 Form Fields
+/*-----------------------------*/
+.contact-us-form input.form-control {
+  height: 50px;
+  border-radius: 12px;
+}
+
+.contact-info-list {
+  gap: 20px 80px;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-info-item i {
+  background: var(--grey-bg-color);
+  width: 55px;
+  height: 55px;
+  color: var(--accent-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 12px;
+}
+
+.google-map iframe {
+  width: 100%;
+}
+.brand-tickers {
+  background: black;
+}
+.ticker-item strong {
+  color: white;
+  font-size: 25px;
+}
+.steup-item {
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+
+.brand-h4 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

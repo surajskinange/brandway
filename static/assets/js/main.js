@@ -23,7 +23,7 @@
    $window.on('load', function () {
       $(".preloader").fadeOut(600);
    });
-   // Preloader End
+    // Preloader End
 
    // 02. Hamburger menu Js //
    document.addEventListener('DOMContentLoaded', function (event) {
@@ -95,4 +95,4 @@
       type: "iframe",
    });
 
-})(jQuery);
+})(jQuery);   

@@ -3,16 +3,24 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <!-- Logo Start-->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'assets/images/logo/logo-black.png' %}" alt="Logo">
             </a>
             <!-- Logo End-->
+            <div class="mobile-nav-actions d-lg-none ms-auto">
+                <a class="btn btn-dark btn-sm mobile-top-contact-btn" href="contact.html">
+                    Contact Us 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
             <!-- Mobile Toggle -->
             <button
                 class="navbar-toggler collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbar-content"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
             >
                 <span class="hamburger-toggle">
                     <span class="hamburger">
@@ -28,13 +36,13 @@
                 <div class="nav-menu-wrapper">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">
+                            <a href="{% url 'home' %}" class="nav-link active">
                                 <i class="fa fa-fw fa-home"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">
+                            <a href="{% url 'about' %}" class="nav-link">
                                 <i class="fa fa-bullseye" aria-hidden="true"></i>
                                 About Us
                             </a>
@@ -70,13 +78,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="blog.html" class="nav-link">
+                            <a href="{% url 'blog' %}" class="nav-link">
                                 <i class="fa-solid fa-box"></i>
                                 Our Blog
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">
+                            <a href="{% url 'contact' %}" class="nav-link">
                                 <i class="fa fa-fw fa-envelope"></i>
                                 Contact
                             </a>
@@ -85,12 +93,52 @@
                 </div>
                 <!-- Get a Demo Button -->
                 <div class="header-btn">
-                    <a class="btn btn-dark" href="contact.html">
+                    <a class="btn btn-dark" href="{% url 'contact' %}">
                         Get A Demo
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </nav>
+        <div class="mobile-bottom-nav d-flex d-lg-none align-items-center justify-content-between">
+            <a href="{% url 'home' %}" class="mobile-bottom-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="{% url 'about' %}" class="mobile-bottom-link">
+                <i class="fa-solid fa-user"></i>
+                <span>About Us</span>
+            </a>
+            <button type="button" class="mobile-bottom-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#mobileServicesOffcanvas" aria-controls="mobileServicesOffcanvas">
+                <i class="fa-solid fa-list"></i>
+                <span>Categories</span>
+            </button>
+            <a href="{% url 'contact' %}" class="mobile-bottom-link">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Contact</span>
+            </a>
+            <a href="#" class="mobile-bottom-link">
+                <i class="fa-solid fa-user-circle"></i>
+                <span>My Account</span>
+            </a>
+        </div>
+
+        <div class="offcanvas offcanvas-start mobile-services-offcanvas" tabindex="-1" id="mobileServicesOffcanvas" aria-labelledby="mobileServicesOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileServicesOffcanvasLabel">Our Services</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="mobile-services-list list-unstyled mb-0">
+                    <li><a href="e-commerce-plans.html">Marketplace Management</a></li>
+                    <li><a href="digital-marketing-service.html">Digital Marketing</a></li>
+                    <li><a href="influncera-plans.html">Influencer Marketing</a></li>
+                    <li><a href="website-designing-service.html">Website Design</a></li>
+                    <li><a href="marketing-plans.html">Marketplace Branding</a></li>
+                    <li><a href="branding-plans.html">Branding Plans</a></li>
+                    <li><a href="branding-plans-advance.html">360 Marketing Plans</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>

@@ -81,6 +81,7 @@
 
     .section-title h2 {
         font-size: 40px;
+        line-height: 35px;
     }
 
     /*	Home*/
@@ -249,7 +250,7 @@
     }
     /*	Home*/
     .stratum-hero-section {
-        padding: 130px 0 60px;
+        padding: 120px 0 30px;
     }
     .stratum-hero-section h1 {
         font-size: 120px;
@@ -416,7 +417,7 @@
     /***     General CSS      ***/
     /************************************/
     .section-row {
-        padding: 40px 0;
+        padding: 15px 0;
     }
     .section-title h2 {
         font-size: 30px;
@@ -447,8 +448,13 @@
     /************************************/
     /***     Home Page      ***/
     /************************************/
+    #featureAccordion button.accordion-button{
+        font-size: 21px;
+                line-height: 30px;
+
+    }
     .stratum-hero-section h1 {
-        font-size: 68px;
+        font-size: 65px;
         line-height: 68px;
         letter-spacing: -2px;
     }
@@ -491,7 +497,8 @@
         display: none;
     }
     .top-category {
-        display: block !important;
+               display: flex !important;
+        flex-wrap: nowrap;
     }
     .top-category span {
         margin: 3px 1px;

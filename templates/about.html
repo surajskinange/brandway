@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'include/header.html' %}
+    <body>
+        <!-- Preloader Start -->
+        <div class="preloader">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div id="loading-icon">
+                    <img src="{% static 'assets/images/loader.svg' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+        <!-- Header Start -->
+        {% include 'include/menu.html' %}
+        <!-- Header End -->
+
+        <!-- SubHeader Start-->
+       <section class="page-subheader">
+         <div class="container">           
+            <div class="section-title text-center mb-4">
+               <h1 class="text-white title-xl wow fadeInUp" data-wow-delay="0.2s">Creative Ideas Blog</h1>
+            </div>
+            <div class="row align-items-center justify-content-center wow fadeInUp">
+                
+                <div class="col-lg-12 text-center">
+                    <p class="text-white m-0">At Stratum, we deliver innovative digital solutions that help brands thrive. From web and app development to data-driven marketing.</p>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- SubHeader End--> 
+        <!-- SubHeader Section Start-->
+        <section class="subheader-section">
+           
+            <!-- About and Feature Start -->
+            <div class="about section-row">
+                <div class="container">
+                    <div class="row pb-4">
+                       
+                        <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                            <div class="section-title">
+                                <h2 class="wow fadeInUp">
+                                    Brandway helps businesses and online sellers grow faster with powerful websites, smart digital marketing, and complete e-commerce management.
+                                </h2>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-5 mt-3">
+                                    <img src="{% static 'assets/images/about.jpg' %}" alt="" class="wow fadeInLeft rounded-4 h-100">
+                                </div>
+                                <div class="col-lg-7 wow fadeInRight">
+                                    <h2 class="mb-3 pt-4">Why Choose Brandway</h2>
+                                    <p>We build growth-driven websites, marketplace management systems, and digital marketing campaigns for Amazon, Flipkart, Shopify, and D2C brands. Every solution is designed to increase visibility, generate more sales, and strengthen your online brand.</p>
+                                    <ul class="mb-4">
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> Growth-driven digital marketing and marketplace management
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> High-converting websites and user-focused brand experiences
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> Amazon, Flipkart, and e-commerce seller solutions
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> Branding, SEO, and social media growth strategies
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> Influencer campaigns and performance-driven advertising
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="fa-solid fa-circle-check"></i> 360° digital strategy for long-term online success
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-dark" href="contact.html">Get A Demo
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Facts Counter Start-->
+                    <div class="our-facts-counter mt-5">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="facts-item-counter p-5 bg-white rounded-4">
+                                    <h2>
+                                        <span data-mf-roller-to="90"></span>M
+                                    </h2>
+                                    <strong>Client satisfaction</strong>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="facts-item-counter p-5 bg-white rounded-4">
+                                    <h2>
+                                        <span data-mf-roller-to="180"></span>+
+                                    </h2>
+                                    <strong>Projects Completed</strong>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="facts-item-counter p-5 bg-white rounded-4">
+                                    <h2>
+                                        <span data-mf-roller-to="250"></span>K
+                                    </h2>
+                                    <strong>Audience reached</strong>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="facts-item-counter p-5 bg-white rounded-4">
+                                    <h2>
+                                        <span data-mf-roller-to="15"></span>+
+                                    </h2>
+                                    <strong>Years of Completed</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Facts Counter End -->
+                </div>
+            </div>
+        </section>
+        <!-- SubHeader Section End-->
+       
+        <!-- Top Banner Start -->
+        <section class="top-banner wow fadeInUp">
+            <div
+                class="banner-thumb"
+                data-mf-parallax
+                data-mf-parallax-speed="1.5"
+                data-mf-parallax-speed-tablet="1.25"
+                data-mf-parallax-speed-mobile="1"
+            >
+                <img src="{% static 'assets/images/banner-02.jpg' %}" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+        </section>
+        <!-- Top Banner End -->
+        <!-- Mission and Vision Start -->
+        <section class="misson-vision-wrapper section-row">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-10 col-md-12 col-sm-12 wow fadeInUp">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp">
+                                We help ambitious brands and online sellers grow faster with website design, digital marketing, and marketplace management that drives measurable revenue.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="misson-vision-inner">
+                    <div class="row align-items-center pb-4 mb-4 border-bottom wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-3 col-md-4">
+                            <h3 class="mb-0">Our Mission</h3>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <p class="m-0">To help brands increase visibility, generate leads, and convert more customers through smart websites, high-impact marketing, and marketplace expertise.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center pb-4 mb-4 border-bottom wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-4">
+                            <h3 class="mb-0">Our Vision</h3>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <p class="m-0">To become the trusted growth partner for Amazon, Flipkart, Shopify, and digital-first brands seeking consistent online success.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center pb-4 border-bottom wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-4">
+                            <h3 class="mb-0">Our Values</h3>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <p class="m-0">We deliver measurable outcomes through creativity, data, SEO, branding, and ongoing e-commerce support that keeps your business growing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mission and Visson End -->
+        <!-- Testimonial Start -->
+        <section class="testimonials-section mt-0 section-row">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="section-title text-center">
+                        <h2 class="wow fadeInUp">
+                            Hear What Our Happy Clients Say About Their Success Stories
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-wrap swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <div class="star-icon text-warning d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold pt-3 pb-3">
+                                So Easy
+                            </strong>
+                            <p class="text-muted">
+                                Working with this team felt like adding a full creative department to our company.
+                        They are fast, responsive & ridiculously talented.
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <img src="{% static 'assets/images/testimonial/client-2.png' %}" class="rounded-circle me-2" alt="">
+                                <div>
+                                    <strong>Sophia Rahman</strong>
+                                    <span class="text-muted">BrightEdge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <div class="star-icon text-warning d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold pt-3 pb-3">
+                                Incredible!
+                            </strong>
+                            <p class="text-muted">
+                                Working with this team felt like adding a full creative department to our company.
+                        Honestly one of the smoothest experiences.
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <img src="{% static 'assets/images/testimonial/client-4.png' %}" class="rounded-circle me-2" alt="">
+                                <div>
+                                    <strong>Michael Hayes</strong>
+                                    <span class="text-muted">CEO, TechNova</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <div class="star-icon text-warning d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold pt-3 pb-3">
+                                Amazing
+                            </strong>
+                            <p class="text-muted">
+                                Working with this team felt like adding a full creative department to our company.
+                        Honestly one of the smoothest experiences.
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <img src="{% static 'assets/images/testimonial/client-6.png' %}" class="rounded-circle me-2" alt="">
+                                <div>
+                                    <strong>Michael Hayes</strong>
+                                    <span class="text-muted">CEO, TechNova</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <div class="star-icon text-warning d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold pt-3 pb-3">
+                                Love It!
+                            </strong>
+                            <p class="text-muted">
+                                Working with this team felt like adding a full creative department to our company.
+                        Honestly one of the smoothest experiences.
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <img src="{% static 'assets/images/testimonial/client-4.png' %}" class="rounded-circle me-2" alt="">
+                                <div>
+                                    <strong>Michael Hayes</strong>
+                                    <span class="text-muted">CEO, TechNova</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeInUp">
+                        <div class="testimonial-card rounded-4 bg-white">
+                            <div class="star-icon text-warning d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <strong class="fw-bold pt-3 pb-3">
+                                Absolutely stunning
+                            </strong>
+                            <p class="text-muted">
+                                Working with this team felt like adding a full creative department to our company.
+                        Honestly one of the smoothest experiences.
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <img src="{% static 'assets/images/testimonial/client-6.png' %}" class="rounded-circle me-2" alt="">
+                                <div>
+                                    <strong>Michael Hayes</strong>
+                                    <span class="text-muted">CEO, TechNova</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination testimonials-pagination"></div>
+            </div>
+        </section>
+        <!-- Testimonial End -->
+        <!-- Transforming Ideas -->
+        <!-- Transforming Ideas End -->
+        <!-- Our Team Start-->
+       <!-- Our Team End-->
+        <!-- Footer Start -->
+        {% include 'include/footer.html' %}
+    </body>
+</html>

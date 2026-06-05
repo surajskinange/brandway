@@ -3,34 +3,30 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Stratum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page_description|default:'Brandway helps businesses grow with digital marketing, SEO, branding, website development, Shopify solutions, and performance-driven online strategies for startups and growing brands.' }}">
+    <meta name="keywords" content="{{ page_keywords|default:'Brandway, Digital Marketing Agency, SEO Services, Website Development, Shopify Development, Branding Agency, Social Media Marketing, Performance Marketing, Web Design, AI Marketing Agency, India' }}">
+    <meta name="author" content="{{ page_author|default:'Brandway' }}">
     <!-- Page Title -->
     <!-- Primary Meta Tags -->
-    <title>Brandway - Digital Marketing, Branding & Web Solutions</title>
-    <meta name="title" content="Brandway - Digital Marketing, Branding & Web Solutions">
-    <meta name="description" content="Brandway helps businesses grow with digital marketing, SEO, branding, website development, Shopify solutions, and performance-driven online strategies for startups and growing brands.">
-    <meta name="keywords" content="Brandway, Digital Marketing Agency, SEO Services, Website Development, Shopify Development, Branding Agency, Social Media Marketing, Performance Marketing, Web Design, AI Marketing Agency, India">
-    <meta name="author" content="Brandway">
+    <title>{{ page_title|default:'Brandway - Digital Marketing, Branding & Web Solutions' }}</title>
+    <meta name="title" content="{{ page_title|default:'Brandway - Digital Marketing, Branding & Web Solutions' }}">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Brandway - Digital Marketing, Branding & Web Solutions">
-    <meta property="og:description" content="Grow your business with Brandway’s expert digital marketing, branding, SEO, and website development services.">
-    <meta property="og:url" content="https://www.brandway.in">
+    <meta property="og:title" content="{{ page_og_title|default:page_title|default:'Brandway - Digital Marketing, Branding & Web Solutions' }}">
+    <meta property="og:description" content="{{ page_og_description|default:page_description|default:'Grow your business with Brandway’s expert digital marketing, branding, SEO, and website development services.' }}">
+    <meta property="og:url" content="{{ page_og_url|default:'https://www.brandway.in' }}">
     <meta property="og:site_name" content="Brandway">
-    <meta property="og:image" content="https://www.brandway.in/assets/images/og-image.jpg">
+    <meta property="og:image" content="{{ page_og_image|default:'https://www.brandway.in/assets/images/og-image.jpg' }}">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Brandway - Digital Marketing, Branding & Web Solutions">
-    <meta name="twitter:description" content="Brandway provides SEO, branding, web development, Shopify and performance marketing services for growing businesses.">
-    <meta name="twitter:image" content="https://www.brandway.in/assets/images/og-image.jpg">
+    <meta name="twitter:title" content="{{ twitter_title|default:page_title|default:'Brandway - Digital Marketing, Branding & Web Solutions' }}">
+    <meta name="twitter:description" content="{{ twitter_description|default:page_description|default:'Brandway provides SEO, branding, web development, Shopify and performance marketing services for growing businesses.' }}">
+    <meta name="twitter:image" content="{{ twitter_image|default:'https://www.brandway.in/assets/images/og-image.jpg' }}">
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.brandway.in">
+    <link rel="canonical" href="{{ canonical_url|default:'https://www.brandway.in' }}">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
     <!-- Theme Color -->

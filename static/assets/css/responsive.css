@@ -3,677 +3,676 @@
 /************************************/
 
 @media only screen and (max-width: 1440px) {
-    /*	Home Page*/
-    .hero {
-        padding: 170px 0 80px;
-        margin-top: 0;
-    }
-    .hero h1 {
-        font-size: 75px;
-    }
-    .rotate-social-link {
-        left: -125px;
-    }
-    .feature-box {
-        padding: 40px !important;
-    }
-    .service-content-right p {
-        max-width: 420px;
-    }
-    .client-quote h4 {
-        margin-bottom: 25px !important;
-    }
-    .testimonial-card {
-        padding: 20px;
-    }
-    .testimonial-card h6.fw-bold {
-        font-size: 18px;
-    }
-    .testimonial-card p {
-        font-size: 16px;
-    }
-    .testimonial-card strong {
-        font-size: 18px;
-    }
-    .pricing-card {
-        padding: 35px !important;
-    }
-    .logo-brand-text {
-        font-size: 165px;
-        line-height: 178px;
-    }
+  /*	Home Page*/
+  .hero {
+    padding: 170px 0 80px;
+    margin-top: 0;
+  }
+  .hero h1 {
+    font-size: 75px;
+  }
+  .rotate-social-link {
+    left: -125px;
+  }
+  .feature-box {
+    padding: 40px !important;
+  }
+  .service-content-right p {
+    max-width: 420px;
+  }
+  .client-quote h4 {
+    margin-bottom: 25px !important;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+  .testimonial-card h6.fw-bold {
+    font-size: 18px;
+  }
+  .testimonial-card p {
+    font-size: 16px;
+  }
+  .testimonial-card strong {
+    font-size: 18px;
+  }
+  .pricing-card {
+    padding: 35px !important;
+  }
+  .logo-brand-text {
+    font-size: 165px;
+    line-height: 178px;
+  }
 
-    .stratum-hero-section h1 {
-        font-size: 140px;
-        line-height: 115px;
-    }
-    .stratum-hero-section .hero-content .item-counter strong {
-        font-size: 13px;
-    }
-    div#banner-parallax {
-        background-position: center !important;
-        min-height: 500px;
-        background-attachment: fixed;
-    }
-    .capabilities .our-service {
-        padding: 20px;
-    }
-    .capabilities .our-service h3 {
-        margin-top: 30px !important;
-    }
-    .capabilities .our-service span {
-        margin-bottom: 20px;
-    }
-    .project-content h4 a {
-        font-size: 22px;
-        font-weight: 600;
-    }
-    .portfolio-wrapper .row.g-5 {
-        --bs-gutter-x: 2rem;
-    }
+  .stratum-hero-section h1 {
+    font-size: 140px;
+    line-height: 115px;
+  }
+  .stratum-hero-section .hero-content .item-counter strong {
+    font-size: 13px;
+  }
+  div#banner-parallax {
+    background-position: center !important;
+    min-height: 500px;
+    background-attachment: fixed;
+  }
+  .capabilities .our-service {
+    padding: 20px;
+  }
+  .capabilities .our-service h3 {
+    margin-top: 30px !important;
+  }
+  .capabilities .our-service span {
+    margin-bottom: 20px;
+  }
+  .project-content h4 a {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .portfolio-wrapper .row.g-5 {
+    --bs-gutter-x: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    .navbar-nav .nav-link {
-        margin: 0 3px;
-        font-size: 16px;
-    }
+  .navbar-nav .nav-link {
+    margin: 0 3px;
+    font-size: 16px;
+  }
 
-    .section-title h2 {
-        font-size: 40px;
-        line-height: 35px;
-    }
+  .section-title h2 {
+    font-size: 40px;
+    line-height: 35px;
+  }
 
-    /*	Home*/
-    .stratum-hero-section {
-        padding: 130px 0 60px;
-    }
-    .stratum-hero-section h1 {
-        font-size: 120px;
-        line-height: 105px;
-    }
-    .stratum-hero-section .rotate-social-link {
-        display: none;
-    }
-    .stratum-hero-section .btn.btn-dark {
-        font-size: 14px;
-        padding: 18px 25px;
-    }
-    .stratum-hero-section .text-center,
-    .collaborating .text-end,
-    .about-section .col-lg-3.col-md-5.col-sm-5.text-end {
-        text-align: left !important;
-        margin-top: 20px;
-    }
-    .about-us-item {
-        padding: 23px;
-    }
-    .about-us-item .mb-5 {
-        margin-bottom: 0.8rem !important;
-    }
-    .steup-item h4 {
-        font-size: 22px;
-    }
-    div#banner-parallax {
-        background-attachment: inherit;
-    }
-    .capabilities .our-service h3 {
-        font-size: 30px;
-    }
-    .portfolio-wrapper .row.g-5 {
-        --bs-gutter-x: 1.2rem;
-    }
-    .portfolio-layout-02 .container {
-        max-width: 95%;
-    }
+  /*	Home*/
+  .stratum-hero-section {
+    padding: 130px 0 60px;
+  }
+  .stratum-hero-section h1 {
+    font-size: 120px;
+    line-height: 105px;
+  }
+  .stratum-hero-section .rotate-social-link {
+    display: none;
+  }
+  .stratum-hero-section .btn.btn-dark {
+    font-size: 14px;
+    padding: 18px 25px;
+  }
+  .stratum-hero-section .text-center,
+  .collaborating .text-end,
+  .about-section .col-lg-3.col-md-5.col-sm-5.text-end {
+    text-align: left !important;
+    margin-top: 20px;
+  }
+  .about-us-item {
+    padding: 23px;
+  }
+  .about-us-item .mb-5 {
+    margin-bottom: 0.8rem !important;
+  }
+  .steup-item h4 {
+    font-size: 22px;
+  }
+  div#banner-parallax {
+    background-attachment: inherit;
+  }
+  .capabilities .our-service h3 {
+    font-size: 30px;
+  }
+  .portfolio-wrapper .row.g-5 {
+    --bs-gutter-x: 1.2rem;
+  }
+  .portfolio-layout-02 .container {
+    max-width: 95%;
+  }
 
-    #processAccordion .w-50 {
-        width: 100% !important;
-    }
-    .cta-app-download .col-lg-4.hide-m img {
-        right: -80px;
-    }
+  #processAccordion .w-50 {
+    width: 100% !important;
+  }
+  .cta-app-download .col-lg-4.hide-m img {
+    right: -80px;
+  }
 
-    .home-layout-03 .hero-content h2 {
-        font-size: 32px;
-    }
-    .home-layout-03 .stratum-hero-section h1.masked-text {
-        font-size: 265px;
-        line-height: 220px;
-        text-align: center;
-    }
-    .home-layout-03 .facts-item-counter {
-        padding: 20px !important;
-    }
-    .home-layout-03 .facts-item-counter h2 {
-        font-size: 50px;
-    }
-    .section-title .title-xxl {
-        font-size: 10em;
-        line-height: 120px;
-    }
-    .our-service-wrapper .service-sticky img {
-        width: 100%;
-    }
-    section.top-banner {
-        height: 350px;
-    }
+  .home-layout-03 .hero-content h2 {
+    font-size: 32px;
+  }
+  .home-layout-03 .stratum-hero-section h1.masked-text {
+    font-size: 265px;
+    line-height: 220px;
+    text-align: center;
+  }
+  .home-layout-03 .facts-item-counter {
+    padding: 20px !important;
+  }
+  .home-layout-03 .facts-item-counter h2 {
+    font-size: 50px;
+  }
+  .section-title .title-xxl {
+    font-size: 10em;
+    line-height: 120px;
+  }
+  .our-service-wrapper .service-sticky img {
+    width: 100%;
+  }
+  section.top-banner {
+    height: 350px;
+  }
 
-    .hero {
-        padding: 150px 0 50px;
-        margin-top: 0;
-    }
-    .hero h1 {
-        font-size: 60px;
-        line-height: 80px;
-    }
-    .rotate-social-link {
-        left: -125px;
-    }
-    .hero-content .banner-desc {
-        font-size: 16px;
-        margin-bottom: 0 !important;
-        line-height: 25px;
-    }
-    .about span.who-we {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-    .experience .experience-number {
-        font-size: 240px;
-        line-height: 180px;
-    }
-    .customers-rating-card {
-        padding: 25px !important;
-    }
+  .hero {
+    padding: 150px 0 50px;
+    margin-top: 0;
+  }
+  .hero h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .rotate-social-link {
+    left: -125px;
+  }
+  .hero-content .banner-desc {
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    line-height: 25px;
+  }
+  .about span.who-we {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .experience .experience-number {
+    font-size: 240px;
+    line-height: 180px;
+  }
+  .customers-rating-card {
+    padding: 25px !important;
+  }
 
-    .feature-box {
-        padding: 25px !important;
-    }
-    .section-title .title-xl {
-        font-size: 70px;
-    }
-    .project-meta::after {
-        width: 75%;
-    }
-    .service-content-left .services-title {
-        font-size: 45px;
-        margin: 0;
-    }
-    .service-content-left span {
-        min-width: 60px;
-    }
-    .service-content-right p {
-        max-width: 360px;
-    }
-    .client-quote h4 {
-        font-size: 30px;
-        margin: 0 0 20px !important;
-    }
-    .testimonial-card {
-        padding: 20px;
-    }
-    .testimonial-card p {
-        font-size: 16px;
-    }
-    .pricing-card {
-        padding: 25px !important;
-    }
-    .feature-list li {
-        margin-bottom: 15px;
-        line-height: 1.1;
-    }
-    .team-item .team-thumb img {
-        width: 100%;
-    }
-    .facts-item-counter h2 {
-        font-size: 60px;
-    }
-    .testimonial-card strong {
-        font-size: 18px;
-    }
-    .logo-brand-text {
-        font-size: 145px;
-        line-height: 150px;
-    }
-    .social-link a {
-        padding: 20px 15px;
-    }
-    .social-link i.fa-brands {
-        font-size: 45px;
-    }
+  .feature-box {
+    padding: 25px !important;
+  }
+  .section-title .title-xl {
+    font-size: 70px;
+  }
+  .project-meta::after {
+    width: 75%;
+  }
+  .service-content-left .services-title {
+    font-size: 45px;
+    margin: 0;
+  }
+  .service-content-left span {
+    min-width: 60px;
+  }
+  .service-content-right p {
+    max-width: 360px;
+  }
+  .client-quote h4 {
+    font-size: 30px;
+    margin: 0 0 20px !important;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+  .testimonial-card p {
+    font-size: 16px;
+  }
+  .pricing-card {
+    padding: 25px !important;
+  }
+  .feature-list li {
+    margin-bottom: 15px;
+    line-height: 1.1;
+  }
+  .team-item .team-thumb img {
+    width: 100%;
+  }
+  .facts-item-counter h2 {
+    font-size: 60px;
+  }
+  .testimonial-card strong {
+    font-size: 18px;
+  }
+  .logo-brand-text {
+    font-size: 145px;
+    line-height: 150px;
+  }
+  .social-link a {
+    padding: 20px 15px;
+  }
+  .social-link i.fa-brands {
+    font-size: 45px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .section-row {
-        padding: 80px 0;
-    }
-    /*	Home*/
-    .stratum-hero-section {
-        padding: 120px 0 30px;
-    }
-    .stratum-hero-section h1 {
-        font-size: 120px;
-        line-height: 105px;
-    }
-    .hide-m {
-        display: none !important;
-    }
-    .stratum-hero-section .text-center,
-    .collaborating .text-end,
-    .about-section .col-lg-3.col-md-5.col-sm-5.text-end {
-        text-align: left !important;
-        margin-top: 20px;
-    }
-    .about-us-item {
-        padding: 23px;
-    }
-    div#banner-parallax {
-        background-attachment: inherit;
-    }
-    .portfolio-wrapper .row.g-5 {
-        --bs-gutter-x: 1.2rem;
-    }
-    .portfolio-layout-02 .container {
-        max-width: 95%;
-    }
+  .section-row {
+    padding: 80px 0;
+  }
+  /*	Home*/
+  .stratum-hero-section {
+    padding: 120px 0 30px;
+  }
+  .stratum-hero-section h1 {
+    font-size: 120px;
+    line-height: 105px;
+  }
+  .hide-m {
+    display: none !important;
+  }
+  .stratum-hero-section .text-center,
+  .collaborating .text-end,
+  .about-section .col-lg-3.col-md-5.col-sm-5.text-end {
+    text-align: left !important;
+    margin-top: 20px;
+  }
+  .about-us-item {
+    padding: 23px;
+  }
+  div#banner-parallax {
+    background-attachment: inherit;
+  }
+  .portfolio-wrapper .row.g-5 {
+    --bs-gutter-x: 1.2rem;
+  }
+  .portfolio-layout-02 .container {
+    max-width: 95%;
+  }
 
-    .hero {
-        padding: 140px 0 50px;
-        margin: 0;
-    }
-    .hero h1 {
-        font-size: 42px;
-        line-height: 50px;
-    }
-    .hero-content .banner-desc {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .rotate-social-link {
-        left: -150px;
-    }
-    .section-title h2 {
-        font-size: 35px;
-    }
-    .about span.who-we {
-        margin: 15px 0;
-        display: inline-block;
-    }
-    .experience .experience-number {
-        font-size: 210px;
-        line-height: 160px;
-    }
-    .customers-rating-card {
-        padding: 20px !important;
-    }
-    .customers-rating-card .text-warning {
-        line-height: 1;
-    }
+  .hero {
+    padding: 140px 0 50px;
+    margin: 0;
+  }
+  .hero h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .hero-content .banner-desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .rotate-social-link {
+    left: -150px;
+  }
+  .section-title h2 {
+    font-size: 35px;
+  }
+  .about span.who-we {
+    margin: 15px 0;
+    display: inline-block;
+  }
+  .experience .experience-number {
+    font-size: 210px;
+    line-height: 160px;
+  }
+  .customers-rating-card {
+    padding: 20px !important;
+  }
+  .customers-rating-card .text-warning {
+    line-height: 1;
+  }
 
-    .feature-box {
-        padding: 20px !important;
-    }
-    .feature-box h3 {
-        font-size: 18px;
-    }
-    .section-title .title-xl {
-        font-size: 50px;
-    }
-    .portfolio-card {
-        padding: 1.1rem !important;
-    }
-    .project-meta::after {
-        width: 70%;
-    }
-    .project-content h4 a {
-        font-size: 25px;
-    }
-    .service-content-left .services-title {
-        font-size: 35px;
-        margin: 0;
-    }
-    .service-content-left span {
-        min-width: 50px;
-    }
-    .service-content-right p {
-        max-width: 260px;
-    }
-    .client-quote {
-        padding-left: 0;
-    }
-    .client-quote h4 {
-        font-size: 22px;
-        margin-bottom: 20px !important;
-    }
-    .quote-icon {
-        margin: 0 !important;
-    }
-    .testimonial-card {
-        padding: 20px;
-    }
-    .pricing-card {
-        padding: 20px !important;
-    }
-    .feature-list li {
-        margin-bottom: 15px;
-        line-height: 1.1;
-    }
-    .our-team .section-title h3 {
-        font-size: 25px;
-    }
-    .team-item .team-thumb img {
-        width: 100%;
-    }
-    .facts-item-counter h2 {
-        font-size: 60px;
-    }
-    .facts-item-counter strong {
-        font-size: 16px;
-        line-height: 1;
-        display: block;
-    }
-    .logo-brand-text {
-        font-size: 105px;
-        line-height: 125px;
-    }
-    .social-link a {
-        padding: 20px 15px;
-    }
-    .social-link i.fa-brands {
-        font-size: 45px;
-    }
+  .feature-box {
+    padding: 20px !important;
+  }
+  .feature-box h3 {
+    font-size: 18px;
+  }
+  .section-title .title-xl {
+    font-size: 50px;
+  }
+  .portfolio-card {
+    padding: 1.1rem !important;
+  }
+  .project-meta::after {
+    width: 70%;
+  }
+  .project-content h4 a {
+    font-size: 25px;
+  }
+  .service-content-left .services-title {
+    font-size: 35px;
+    margin: 0;
+  }
+  .service-content-left span {
+    min-width: 50px;
+  }
+  .service-content-right p {
+    max-width: 260px;
+  }
+  .client-quote {
+    padding-left: 0;
+  }
+  .client-quote h4 {
+    font-size: 22px;
+    margin-bottom: 20px !important;
+  }
+  .quote-icon {
+    margin: 0 !important;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+  .pricing-card {
+    padding: 20px !important;
+  }
+  .feature-list li {
+    margin-bottom: 15px;
+    line-height: 1.1;
+  }
+  .our-team .section-title h3 {
+    font-size: 25px;
+  }
+  .team-item .team-thumb img {
+    width: 100%;
+  }
+  .facts-item-counter h2 {
+    font-size: 60px;
+  }
+  .facts-item-counter strong {
+    font-size: 16px;
+    line-height: 1;
+    display: block;
+  }
+  .logo-brand-text {
+    font-size: 105px;
+    line-height: 125px;
+  }
+  .social-link a {
+    padding: 20px 15px;
+  }
+  .social-link i.fa-brands {
+    font-size: 45px;
+  }
 
-    .home-layout-03 .stratum-hero-section h1.masked-text {
-        font-size: 200px;
-        line-height: 170px;
-    }
-    .home-layout-03 .facts-item-counter {
-        padding: 20px !important;
-    }
-    .home-layout-03 .facts-item-counter h2 {
-        font-size: 50px;
-    }
-    .section-title .title-xxl {
-        font-size: 10em;
-        line-height: 120px;
-    }
-    .our-service-wrapper .service-sticky img {
-        width: 100%;
-    }
-    .rating-review.text-end {
-        text-align: left !important;
-    }
-    section.top-banner {
-        height: 280px;
-    }
-    .our-facts-counter.mt-5 {
-        margin-top: 1rem !important;
-    }
+  .home-layout-03 .stratum-hero-section h1.masked-text {
+    font-size: 200px;
+    line-height: 170px;
+  }
+  .home-layout-03 .facts-item-counter {
+    padding: 20px !important;
+  }
+  .home-layout-03 .facts-item-counter h2 {
+    font-size: 50px;
+  }
+  .section-title .title-xxl {
+    font-size: 10em;
+    line-height: 120px;
+  }
+  .our-service-wrapper .service-sticky img {
+    width: 100%;
+  }
+  .rating-review.text-end {
+    text-align: left !important;
+  }
+  section.top-banner {
+    height: 280px;
+  }
+  .our-facts-counter.mt-5 {
+    margin-top: 1rem !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    /************************************/
-    /***     General CSS      ***/
-    /************************************/
-    .section-row {
-        padding: 15px 0;
-    }
-    .section-title h2 {
-        font-size: 30px;
-    }
-    .section-title .title-xl {
-        font-size: 35px;
-    }
-    .about span.who-we {
-        margin: 0 0 10px;
-        display: inline-block;
-    }
-    .mt-5 {
-        margin-top: 1.5rem !important;
-    }
-    .mb-5 {
-        margin-bottom: 1.5rem !important;
-    }
-    .pb-5 {
-        padding-bottom: 1.5rem !important;
-    }
-    .p-5 {
-        padding: 1.5rem !important;
-    }
-    .pt-5 {
-        padding-top: 1.5rem !important;
-    }
+  /************************************/
+  /***     General CSS      ***/
+  /************************************/
+  .section-row {
+    padding: 15px 0;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .section-title .title-xl {
+    font-size: 35px;
+  }
+  .about span.who-we {
+    margin: 0 0 10px;
+    display: inline-block;
+  }
+  .mt-5 {
+    margin-top: 1.5rem !important;
+  }
+  .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+  .pb-5 {
+    padding-bottom: 1.5rem !important;
+  }
+  .p-5 {
+    padding: 1.5rem !important;
+  }
+  .pt-5 {
+    padding-top: 1.5rem !important;
+  }
 
-    /************************************/
-    /***     Home Page      ***/
-    /************************************/
-    #featureAccordion button.accordion-button{
-        font-size: 21px;
-                line-height: 30px;
+  /************************************/
+  /***     Home Page      ***/
+  /************************************/
+  #featureAccordion button.accordion-button {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .stratum-hero-section h1 {
+    font-size: 65px;
+    line-height: 68px;
+    letter-spacing: -2px;
+  }
+  .stratum-hero-section h1 img {
+    width: 40%;
+  }
+  .brand-text {
+    margin-top: 30px;
+  }
+  .brand-text strong {
+    font-size: 25px;
+  }
+  .about-us-item {
+    padding: 25px;
+    margin-top: 20px;
+  }
+  .collaborating:after {
+    display: none;
+  }
+  .cta-app-download .section-title {
+    text-align: center !important;
+  }
+  .hero {
+    position: relative;
+    padding: 100px 0 50px;
+    margin-top: 0px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .hero h1 span {
+    display: block !important;
+  }
+  .hero h1 span img {
+    margin: 10px 0 5px;
+  }
+  .hero h1 span:last-child img {
+    display: none;
+  }
+  .top-category {
+    display: flex !important;
+    flex-wrap: nowrap;
+  }
+  .top-category span {
+    margin: 3px 1px;
+    display: inline-block;
+  }
+  .rotate-social-link {
+    display: none;
+  }
+  .hero-content .banner-desc {
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero-content .col-lg-6.text-start {
+    text-align: center !important;
+  }
+  .circle-text-img img {
+    width: 130px;
+  }
+  section.brands-wrapper {
+    padding: 30px 0;
+  }
+  .experience .experience-number {
+    font-size: 250px;
+    line-height: 190px;
+  }
+  .customers-rating-card {
+    margin: 15px 0;
+  }
+  .project-right {
+    margin-top: 25px;
+  }
+  .portfolio-card {
+    padding: 1rem !important;
+  }
+  .project-meta::after {
+    left: 16%;
+    width: 60%;
+  }
+  .project-content h4 a {
+    font-size: 25px;
+  }
+  section.top-banner {
+    height: auto;
+  }
 
-    }
-    .stratum-hero-section h1 {
-        font-size: 65px;
-        line-height: 68px;
-        letter-spacing: -2px;
-    }
-    .stratum-hero-section h1 img {
-        width: 40%;
-    }
-    .brand-text {
-        margin-top: 30px;
-    }
-    .brand-text strong {
-        font-size: 25px;
-    }
-    .about-us-item {
-        padding: 25px;
-        margin-top: 20px;
-    }
-    .collaborating:after {
-        display: none;
-    }
-    .cta-app-download .section-title {
-        text-align: center !important;
-    }
-    .hero {
-        position: relative;
-        padding: 100px 0 50px;
-        margin-top: 0px;
-    }
-    .hero h1 {
-        font-size: 40px;
-        line-height: 45px;
-        margin-bottom: 10px;
-    }
-    .hero h1 span {
-        display: block !important;
-    }
-    .hero h1 span img {
-        margin: 10px 0 5px;
-    }
-    .hero h1 span:last-child img {
-        display: none;
-    }
-    .top-category {
-               display: flex !important;
-        flex-wrap: nowrap;
-    }
-    .top-category span {
-        margin: 3px 1px;
-        display: inline-block;
-    }
-    .rotate-social-link {
-        display: none;
-    }
-    .hero-content .banner-desc {
-        font-size: 18px;
-        text-align: center;
-    }
-    .hero-content .col-lg-6.text-start {
-        text-align: center !important;
-    }
-    .circle-text-img img {
-        width: 130px;
-    }
-    section.brands-wrapper {
-        padding: 30px 0;
-    }
-    .experience .experience-number {
-        font-size: 250px;
-        line-height: 190px;
-    }
-    .customers-rating-card {
-        margin: 15px 0;
-    }
-    .project-right {
-        margin-top: 25px;
-    }
-    .portfolio-card {
-        padding: 1rem !important;
-    }
-    .project-meta::after {
-        left: 16%;
-        width: 60%;
-    }
-    .project-content h4 a {
-        font-size: 25px;
-    }
-    section.top-banner {
-        height: auto;
-    }
+  .service-content-left .services-title {
+    font-size: 30px;
+    margin: 0;
+  }
+  .service-content-left span {
+    min-width: 50px;
+  }
+  .service-content-right p {
+    max-width: 280px;
+  }
+  section.brand-area-text strong {
+    gap: 20px;
+    font-size: 40px;
+  }
+  .client-quote {
+    padding: 10px;
+  }
+  .quote-icon {
+    margin: 0 !important;
+  }
+  .client-quote h4 {
+    font-size: 25px;
+  }
+  .testimonials-row {
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+  .price {
+    font-size: 45px;
+  }
+  .feature-list li {
+    margin-bottom: 15px;
+    color: #fff;
+    line-height: 1.1;
+  }
+  .our-facts-counter .col-lg-3.col-md-3.col-sm-6 {
+    width: 50%;
+    margin: 5px 0;
+  }
+  .facts-item-counter h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .our-team .section-title h3 {
+    font-size: 25px;
+  }
+  .team-item .team-thumb img {
+    width: 100%;
+  }
+  section.our-blog .col-lg-4.col-md-4.col-sm-4.text-end {
+    text-align: left !important;
+    margin-top: 20px;
+  }
+  .home-layout-03 .stratum-hero-section {
+    padding: 100px 0 30px;
+  }
+  .home-layout-03 .hero-content h2 {
+    font-size: 30px;
+  }
+  .home-layout-03 .stratum-hero-section h1.masked-text {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .section-title .title-xxl {
+    font-size: 5em;
+    line-height: 60px;
+  }
+  .section-title h3 {
+    font-size: 30px;
+  }
+  .our-service-wrapper .service-sticky .col-lg-5 {
+    margin: 20px 0;
+  }
+  .rating-review.text-end {
+    text-align: left !important;
+  }
+  .rating-review h2 {
+    font-size: 80px;
+    letter-spacing: -3px;
+  }
+  .our-brand-text {
+    padding: 25px 0;
+  }
+  .our-brand-text .ticker-item strong {
+    font-size: 40px;
+  }
 
-    .service-content-left .services-title {
-        font-size: 30px;
-        margin: 0;
-    }
-    .service-content-left span {
-        min-width: 50px;
-    }
-    .service-content-right p {
-        max-width: 280px;
-    }
-    section.brand-area-text strong {
-        gap: 20px;
-        font-size: 40px;
-    }
-    .client-quote {
-        padding: 10px;
-    }
-    .quote-icon {
-        margin: 0 !important;
-    }
-    .client-quote h4 {
-        font-size: 25px;
-    }
-    .testimonials-row {
-        padding: 40px 0;
-        margin-top: 40px;
-    }
-    .price {
-        font-size: 45px;
-    }
-    .feature-list li {
-        margin-bottom: 15px;
-        color: #fff;
-        line-height: 1.1;
-    }
-    .our-facts-counter .col-lg-3.col-md-3.col-sm-6 {
-        width: 50%;
-        margin: 5px 0;
-    }
-    .facts-item-counter h2 {
-        font-size: 50px;
-        margin: 0;
-    }
-    .our-team .section-title h3 {
-        font-size: 25px;
-    }
-    .team-item .team-thumb img {
-        width: 100%;
-    }
-    section.our-blog .col-lg-4.col-md-4.col-sm-4.text-end {
-        text-align: left !important;
-        margin-top: 20px;
-    }
-    .home-layout-03 .stratum-hero-section {
-        padding: 100px 0 30px;
-    }
-    .home-layout-03 .hero-content h2 {
-        font-size: 30px;
-    }
-    .home-layout-03 .stratum-hero-section h1.masked-text {
-        font-size: 100px;
-        line-height: 100px;
-    }
-    .section-title .title-xxl {
-        font-size: 5em;
-        line-height: 60px;
-    }
-    .section-title h3 {
-        font-size: 30px;
-    }
-    .our-service-wrapper .service-sticky .col-lg-5 {
-        margin: 20px 0;
-    }
-    .rating-review.text-end {
-        text-align: left !important;
-    }
-    .rating-review h2 {
-        font-size: 80px;
-        letter-spacing: -3px;
-    }
-    .our-brand-text {
-        padding: 25px 0;
-    }
-    .our-brand-text .ticker-item strong {
-        font-size: 40px;
-    }
+  /*	Footer*/
+  .site-footer {
+    padding: 30px 0 22px !important;
+  }
+  .logo-brand-text {
+    font-size: 55px;
+    line-height: 85px;
+    letter-spacing: -1px;
+  }
+  .footer-social-media .col-lg-2 {
+    padding: 0;
+    width: 16.6%;
+  }
+  .social-link a {
+    padding: 15px 10px;
+  }
+  .social-link i.fa-brands {
+    font-size: 35px;
+  }
+  .quick-links,
+  .service-links {
+    width: 50%;
+  }
+  .about-company {
+    padding-right: 10px !important;
+  }
+  .bottom-footer p.footer-text,
+  .bottom-footer .footer-links.text-end {
+    text-align: center !important;
+  }
 
-    /*	Footer*/
-    .site-footer {
-        padding: 30px 0 22px !important;
-    }
-    .logo-brand-text {
-        font-size: 55px;
-        line-height: 85px;
-        letter-spacing: -1px;
-    }
-    .footer-social-media .col-lg-2 {
-        padding: 0;
-        width: 16.6%;
-    }
-    .social-link a {
-        padding: 15px 10px;
-    }
-    .social-link i.fa-brands {
-        font-size: 35px;
-    }
-    .quick-links,
-    .service-links {
-        width: 50%;
-    }
-    .about-company {
-        padding-right: 10px !important;
-    }
-    .bottom-footer p.footer-text,
-    .bottom-footer .footer-links.text-end {
-        text-align: center !important;
-    }
-
-    /*	Internal Pages*/
-    .page-subheader {
-        padding: 100px 0 40px;
-    }
-    .page-subheader ol.breadcrumb {
-        justify-content: center;
-    }
-    .page-subheader p {
-        text-align: center;
-    }
-    .post-social-sharing ul {
-        text-align: left;
-        margin-top: 20px;
-    }
+  /*	Internal Pages*/
+  .page-subheader {
+    padding: 100px 0 40px;
+  }
+  .page-subheader ol.breadcrumb {
+    justify-content: center;
+  }
+  .page-subheader p {
+    text-align: center;
+  }
+  .post-social-sharing ul {
+    text-align: left;
+    margin-top: 20px;
+  }
 }

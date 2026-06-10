@@ -1,19 +1,82 @@
 {% load static %}
+
+<style>
+/* ── Mobile offcanvas menu ── */
+.mobile-services-list > li {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.mobile-services-list > li > a,
+.mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.mobile-services-list > li > a:hover,
+.mobile-menu-toggle:hover {
+    color: #000;
+}
+
+.toggle-icon {
+    font-size: 12px;
+    transition: transform 0.25s ease;
+}
+
+.mobile-menu-toggle:not(.collapsed) .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.mobile-submenu {
+    padding: 4px 0 10px 0;
+    margin: 0;
+}
+
+.mobile-submenu li a {
+    display: block;
+    padding: 8px 6px 8px 16px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    border-left: 2px solid #e0e0e0;
+    margin-left: 6px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.mobile-submenu li a:hover {
+    color: #000;
+    border-left-color: #000;
+}
+</style>
+
 <header class="main-header header header-02">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <!-- Logo Start-->
+
+            <!-- Logo -->
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'assets/images/logo/logo-black.png' %}" alt="Logo">
             </a>
-            <!-- Logo End-->
+
+            <!-- Mobile Top Contact Button -->
             <div class="mobile-nav-actions d-lg-none ms-auto">
-                <a class="btn btn-dark btn-sm mobile-top-contact-btn" href="contact.html">
-                    Contact Us 
+                <a class="btn btn-dark btn-sm mobile-top-contact-btn" href="{% url 'contact' %}">
+                    Contact Us
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <!-- Mobile Toggle -->
+
+            <!-- Hamburger Toggle -->
             <button
                 class="navbar-toggler collapsed"
                 type="button"
@@ -30,68 +93,37 @@
                     </span>
                 </span>
             </button>
-            <!-- Mobile Toggle End -->
-            <!-- Main Menu Start -->
+
+            <!-- Desktop Main Menu -->
             <div class="collapse navbar-collapse main-menu" id="navbar-content">
                 <div class="nav-menu-wrapper">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="{% url 'home' %}" class="nav-link active">
-                                <i class="fa fa-fw fa-home"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{% url 'about' %}" class="nav-link">
-                                <i class="fa fa-bullseye" aria-hidden="true"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fa fa-server" aria-hidden="true"></i>
-                                Our Services
-                                <i class="bx bx-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="e-commerce-plans.html" class="nav-link">Marketplace Management</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="digital-marketing-service.html" class="nav-link">Digital Marketing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="influncera-plans.html" class="nav-link">Influencer Marketing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="website-designing-service.html" class="nav-link">Website Design</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="marketing-plans.html" class="nav-link">Marketplace Branding</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="branding-plans.html" class="nav-link">Branding Plans</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="branding-plans-advance.html" class="nav-link">360 Marketing Plans</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{% url 'blog' %}" class="nav-link">
-                                <i class="fa-solid fa-box"></i>
-                                Our Blog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{% url 'contact' %}" class="nav-link">
-                                <i class="fa fa-fw fa-envelope"></i>
-                                Contact
-                            </a>
-                        </li>
+                        {% for menu in menus %}
+                            {% if menu.main_menuss_set.all %}
+                            <li class="nav-item dropdown">
+                                <a href="{{ menu.menu_link }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                    {{ menu.menu_name }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    {% for child in menu.main_menuss_set.all %}
+                                    <li class="nav-item">
+                                        <a href="{{ child.menu_link }}" class="nav-link">
+                                            {{ child.menu_name }}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% else %}
+                            <li class="nav-item">
+                                <a href="{{ menu.menu_link }}" class="nav-link">
+                                    {{ menu.menu_name }}
+                                </a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
                 </div>
-                <!-- Get a Demo Button -->
                 <div class="header-btn">
                     <a class="btn btn-dark" href="{% url 'contact' %}">
                         Get A Demo
@@ -100,6 +132,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Mobile Bottom Navigation Bar -->
         <div class="mobile-bottom-nav d-flex d-lg-none align-items-center justify-content-between">
             <a href="{% url 'home' %}" class="mobile-bottom-link">
                 <i class="fa-solid fa-house"></i>
@@ -109,9 +143,15 @@
                 <i class="fa-solid fa-user"></i>
                 <span>About Us</span>
             </a>
-            <button type="button" class="mobile-bottom-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#mobileServicesOffcanvas" aria-controls="mobileServicesOffcanvas">
+            <button
+                type="button"
+                class="mobile-bottom-nav-btn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileServicesOffcanvas"
+                aria-controls="mobileServicesOffcanvas"
+            >
                 <i class="fa-solid fa-list"></i>
-                <span>Categories</span>
+                <span>Main Menu</span>
             </button>
             <a href="{% url 'contact' %}" class="mobile-bottom-link">
                 <i class="fa-solid fa-phone-volume"></i>
@@ -123,22 +163,56 @@
             </a>
         </div>
 
-        <div class="offcanvas offcanvas-start mobile-services-offcanvas" tabindex="-1" id="mobileServicesOffcanvas" aria-labelledby="mobileServicesOffcanvasLabel">
+        <!-- Mobile Offcanvas — Dynamic Menu -->
+        <div
+            class="offcanvas offcanvas-start mobile-services-offcanvas"
+            tabindex="-1"
+            id="mobileServicesOffcanvas"
+            aria-labelledby="mobileServicesOffcanvasLabel"
+        >
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="mobileServicesOffcanvasLabel">Our Services</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="mobileServicesOffcanvasLabel">Menu</h5>
+                <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="mobile-services-list list-unstyled mb-0">
-                    <li><a href="e-commerce-plans.html">Marketplace Management</a></li>
-                    <li><a href="digital-marketing-service.html">Digital Marketing</a></li>
-                    <li><a href="influncera-plans.html">Influencer Marketing</a></li>
-                    <li><a href="website-designing-service.html">Website Design</a></li>
-                    <li><a href="marketing-plans.html">Marketplace Branding</a></li>
-                    <li><a href="branding-plans.html">Branding Plans</a></li>
-                    <li><a href="branding-plans-advance.html">360 Marketing Plans</a></li>
+                    {% for menu in menus %}
+                        {% if menu.main_menuss_set.all %}
+                        <li>
+                            <!-- Parent with children: collapsible toggle -->
+                            <button
+                                class="mobile-menu-toggle collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#mobileSubmenu{{ forloop.counter }}"
+                                aria-expanded="false"
+                            >
+                                {{ menu.menu_name }}
+                                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                            </button>
+                            <ul class="collapse mobile-submenu list-unstyled" id="mobileSubmenu{{ forloop.counter }}">
+                                {% for child in menu.main_menuss_set.all %}
+                                <li>
+                                    <a href="{{ child.menu_link }}">{{ child.menu_name }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li>
+                            <!-- No children: plain link -->
+                            <a href="{{ menu.menu_link }}">{{ menu.menu_name }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
             </div>
         </div>
+
     </div>
 </header>

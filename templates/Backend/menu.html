@@ -1,0 +1,349 @@
+{% load static %}
+<!-- Topbar Start -->
+{% include 'Backend/includes/topbar.html' %}
+<!-- end Topbar -->
+<style>
+    #datatable-buttons_wrapper .row:first-child {
+        align-items: center;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter input {
+        margin-left: 0 !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_paginate {
+        display: flex;
+        justify-content: end;
+        text-align: left !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_paginate ul.pagination {
+        justify-content: flex-start !important;
+    }
+
+    @media (max-width: 767.98px) {
+        #datatable-buttons_wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #datatable-buttons_wrapper .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #datatable-buttons_wrapper table {
+            min-width: 760px;
+        }
+
+        #datatable-buttons_wrapper .dataTables_wrapper {
+            min-width: 100%;
+        }
+    }
+</style>
+<div class="content-page">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
+                <div class="text-end">
+                    <button
+                        type="button"
+                        class="btn btn-primary mb-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#menuModal"
+                        id="addMenuBtn"
+                    >
+                        <i class="mdi mdi-plus me-1"></i>
+                        Add Menu
+                    </button>
+                </div>
+            </div>
+            <!-- ===== ADD / EDIT MODAL ===== -->
+            <div
+                class="modal fade"
+                id="menuModal"
+                tabindex="-1"
+                aria-labelledby="menuModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="menuModalLabel">Add Menu</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" id="menuForm">
+                                {% csrf_token %}
+                                <input type="hidden" name="menu_id" id="menuId">
+                                <input
+                                    type="hidden"
+                                    name="action"
+                                    id="formAction"
+                                    value="add"
+                                >
+                                <div class="mb-3">
+                                    <label for="menuName" class="form-label">Menu Name</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="menuName"
+                                        name="menu_name"
+                                        placeholder="Enter menu name"
+                                    >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="menuLink" class="form-label">Menu Link</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="menuLink"
+                                        name="menu_link"
+                                        placeholder="Enter menu link"
+                                    >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="submenu" class="form-label">Submenu</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="submenu"
+                                        name="submenu"
+                                        placeholder="Enter submenu"
+                                    >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="parent" class="form-label">Parent ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="parent"
+                                        name="parent"
+                                        placeholder="Enter parent id"
+                                    >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="position" class="form-label">Position</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="position"
+                                        name="position"
+                                        placeholder="Enter position"
+                                    >
+                                </div>
+                                <div class="modal-footer px-0 pb-0">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" id="saveBtn">Save Menu</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== DELETE CONFIRM MODAL ===== -->
+            <div
+                class="modal fade"
+                id="deleteModal"
+                tabindex="-1"
+                aria-labelledby="deleteModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete
+                            <strong id="deleteMenuName"></strong>
+                            ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <a href="#" id="confirmDeleteBtn" class="btn btn-danger">Yes, Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Menu Table</h5>
+                    </div>
+                    <div class="card-body mt">
+                        <div class="table-responsive">
+                            <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap mt-3 w-100">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Menu Name</th>
+                                        <th>Menu Link</th>
+                                        <th>Submenu</th>
+                                        <th>Parent Id</th>
+                                        <th>Position</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for menu in menus %}
+                                    <tr>
+                                        <td>{{ menu.id }}</td>
+                                        <td>{{ menu.menu_name }}</td>
+                                        <td>{{ menu.menu_link }}</td>
+                                        <td>{{ menu.submenu }}</td>
+                                        <td>{{ menu.parent_id }}</td>
+                                        <td>{{ menu.position }}</td>
+                                        <td>
+                                            <!-- Edit Button -->
+                                            <button
+                                                class="btn btn-sm btn-outline-primary edit-btn"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#menuModal"
+                                                data-id="{{ menu.id }}"
+                                                data-name="{{ menu.menu_name }}"
+                                                data-link="{{ menu.menu_link }}"
+                                                data-submenu="{{ menu.submenu }}"
+                                                data-parent="{{ menu.parent_id }}"
+                                                data-position="{{ menu.position }}"
+                                            >Edit</button>
+                                            <!-- Delete Button -->
+                                            <button
+                                                class="btn btn-sm btn-outline-danger delete-btn"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#deleteModal"
+                                                data-id="{{ menu.id }}"
+                                                data-name="{{ menu.menu_name }}"
+                                            >Delete</button>
+                                        </td>
+                                    </tr>
+                                    {% empty %}
+                                    <tr>
+                                        <td colspan="7">No data found</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== TOAST NOTIFICATIONS ===== -->
+{% if messages %}
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+    {% for message in messages %}
+    <div
+        class="toast align-items-center text-white border-0 show mb-2
+        {% if message.tags == 'success' %} bg-success
+        {% elif message.tags == 'error' %} bg-danger
+        {% elif message.tags == 'warning' %} bg-warning
+        {% else %} bg-info
+        {% endif %}"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        id="toast-{{ forloop.counter }}"
+    >
+        <div class="d-flex">
+            <div class="toast-body fs-6">
+                <i class="mdi 
+                    {% if message.tags == 'success' %}mdi-check-circle
+                    {% elif message.tags == 'error' %}mdi-close-circle
+                    {% elif message.tags == 'warning' %}mdi-alert
+                    {% else %}mdi-information
+                    {% endif %} me-2"></i>
+                {{ message }}
+            </div>
+            <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+            ></button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<script>
+    // Auto-hide toasts after 3 seconds
+    document.querySelectorAll('.toast').forEach(function (toastEl) {
+        setTimeout(function () {
+            var toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+            toast.show();
+        }, 100);
+    });
+</script>
+{% endif %}
+{% include 'Backend/includes/footer.html' %}
+<script>
+    // ── Add Menu button: reset form to "add" mode ──
+    document.getElementById('addMenuBtn').addEventListener('click', function () {
+        document.getElementById('menuModalLabel').innerText = 'Add Menu';
+        document.getElementById('menuForm').reset();
+        document.getElementById('menuId').value = '';
+        document.getElementById('formAction').value = 'add';
+        document.getElementById('menuForm').action = '';  // posts to current page
+        document.getElementById('saveBtn').innerText = 'Save Menu';
+    });
+
+    // ── Edit buttons: fill modal with row data ──
+    document.querySelectorAll('.edit-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const id       = this.dataset.id;
+            const editUrl  = `/menu/edit/${id}/`;   // adjust to match your urls.py
+
+            document.getElementById('menuModalLabel').innerText = 'Edit Menu';
+            document.getElementById('menuId').value             = id;
+            document.getElementById('menuName').value           = this.dataset.name;
+            document.getElementById('menuLink').value           = this.dataset.link;
+            document.getElementById('submenu').value            = this.dataset.submenu;
+            document.getElementById('parent').value             = this.dataset.parent;
+            document.getElementById('position').value           = this.dataset.position;
+            document.getElementById('formAction').value         = 'edit';
+            document.getElementById('menuForm').action          = editUrl;
+            document.getElementById('saveBtn').innerText        = 'Update Menu';
+        });
+    });
+
+    // ── Delete buttons: set confirm link ──
+    document.querySelectorAll('.delete-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const id        = this.dataset.id;
+            const name      = this.dataset.name;
+            const deleteUrl = `/menu/delete/${id}/`;   // adjust to match your urls.py
+
+            document.getElementById('deleteMenuName').innerText  = name;
+            document.getElementById('confirmDeleteBtn').href     = deleteUrl;
+        });
+    });
+</script>

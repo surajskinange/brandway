@@ -1,0 +1,648 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Main_menuss",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Main_menuss",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Main_menuss",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0001_initial",
+        "description": "accounts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='AdminUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "accounts.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0002_menu",
+        "description": "accounts.migrations.0002_menu",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Menu',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('menu_name', models.CharField(max_length=100)),",
+        "detail": "accounts.migrations.0002_menu",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0003_main_menu_delete_menu",
+        "description": "accounts.migrations.0003_main_menu_delete_menu",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0002_menu'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Main_menu',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('menu_name', models.CharField(max_length=255)),",
+        "detail": "accounts.migrations.0003_main_menu_delete_menu",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0004_rename_main_menu_main_menuss",
+        "description": "accounts.migrations.0004_rename_main_menu_main_menuss",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0003_main_menu_delete_menu'),\n    ]\n    operations = [\n        migrations.RenameModel(\n            old_name='Main_menu',\n            new_name='Main_menuss',\n        ),\n    ]",
+        "detail": "accounts.migrations.0004_rename_main_menu_main_menuss",
+        "documentation": {}
+    },
+    {
+        "label": "AccountsConfig",
+        "kind": 6,
+        "importPath": "accounts.apps",
+        "description": "accounts.apps",
+        "peekOfCode": "class AccountsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'accounts'",
+        "detail": "accounts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "menu_context",
+        "kind": 2,
+        "importPath": "accounts.context_processors",
+        "description": "accounts.context_processors",
+        "peekOfCode": "def menu_context(request):\n    menus = Main_menuss.objects.filter(\n        parent__isnull=True,\n        is_active=True\n    ).order_by(\"position\")\n    return {\n        'menus': menus\n    }",
+        "detail": "accounts.context_processors",
+        "documentation": {}
+    },
+    {
+        "label": "AdminUser",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class AdminUser(models.Model):\n    name = models.CharField(max_length=100)\n    email = models.EmailField(unique=True)\n    password = models.CharField(max_length=255)\n    role = models.CharField(max_length=20)\n    is_active = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.email\n# models.py",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Main_menuss",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Main_menuss(models.Model):\n    menu_name = models.CharField(max_length=255)\n    menu_link = models.CharField(max_length=255)\n    submenu = models.CharField(max_length=255)\n    parent = models.ForeignKey(\"self\", on_delete=models.CASCADE, null=True, blank=True)\n    position = models.IntegerField(default=1)\n    is_active = models.BooleanField(default=True)\n    def __str__(self):\n        return self.menu_name",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def menu(request):\n    if request.method == \"POST\":\n        Main_menuss.objects.create(\n            menu_name=request.POST.get(\"menu_name\"),\n            menu_link=request.POST.get(\"menu_link\"),\n            submenu=request.POST.get(\"submenu\"),\n            parent_id=request.POST.get(\"parent\") or None,\n            position=request.POST.get(\"position\") or 1,\n        )\n        return redirect(\"menu\")  # apne url name ke according",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "brandway.asgi",
+        "description": "brandway.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "brandway.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "admin_required",
+        "kind": 2,
+        "importPath": "brandway.decorators",
+        "description": "brandway.decorators",
+        "peekOfCode": "def admin_required(view_func):\n    def wrapper(request, *args, **kwargs):\n        if \"admin_id\" not in request.session:\n            return redirect(\"admin_login\")\n        return view_func(request, *args, **kwargs)\n    return wrapper",
+        "detail": "brandway.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-lhzjn%(6+m*91v@2+*b49&a=ag)ptarim)2r)ckk(2bkii01#q\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-lhzjn%(6+m*91v@2+*b49&a=ag)ptarim)2r)ckk(2bkii01#q\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"accounts\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"accounts\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "ALLOWED_HOSTS = [\"*\"]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"accounts\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"accounts\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n]\nMIDDLEWARE = [",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"whitenoise.middleware.WhiteNoiseMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "ROOT_URLCONF = \"brandway.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [BASE_DIR / \"templates\"],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [BASE_DIR / \"templates\"],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",\n                \"django.contrib.messages.context_processors.messages\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"brandway.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"u543626143_pythondjango\",\n        \"USER\": \"u543626143_pythonusername\",\n        \"PASSWORD\": \"Pythonsuraj@12345\",\n        \"HOST\": \"auth-db1085.hstgr.io\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"u543626143_pythondjango\",\n        \"USER\": \"u543626143_pythonusername\",\n        \"PASSWORD\": \"Pythonsuraj@12345\",\n        \"HOST\": \"auth-db1085.hstgr.io\",\n        \"PORT\": \"3306\",\n    }\n}",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_STORAGE",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "STATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "brandway.urls",
+        "description": "brandway.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", home, name=\"home\"),\n    path(\"home/\", home, name=\"home\"),\n    path(\"about/\", about, name=\"about\"),\n    path(\"blog/\", blog, name=\"blog\"),\n    path(\"contact/\", contact, name=\"contact\"),\n    path(\"my-admin/\", my_admin, name=\"my_admin\"),\n    # AUTH\n    path(\"login/\", admin_login, name=\"admin_login\"),",
+        "detail": "brandway.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def home(request):\n    context = {\n        \"page_title\": \"Brandway - Digital Marketing, Branding & Web Solutions\",\n        \"page_description\": \"Brandway helps businesses grow with digital marketing...\",\n    }\n    return render(request, \"frontend/index.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 2 — ABOUT PAGE\n# ════════════════════════════════════════\ndef about(request):",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def about(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"About Brandway - Digital Marketing & Branding Agency\",\n        \"page_description\": \"Learn about Brandway...\",\n    }\n    return render(request, \"frontend/about.html\", context)\n    # END: Opens about page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 3 — BLOG PAGE",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "blog",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def blog(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"Brandway Blog - Digital Marketing, SEO...\",\n        \"page_description\": \"Explore the Brandway Blog...\",\n    }\n    return render(request, \"frontend/blog.html\", context)\n    # END: Opens blog page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 4 — CONTACT PAGE",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def contact(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"Contact Brandway...\",\n        \"page_description\": \"Get in touch with Brandway...\",\n    }\n    return render(request, \"frontend/contact.html\", context)\n    # END: Opens contact page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 5 — ADMIN LOGIN",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "admin_login",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def admin_login(request):\n    # START: Checks if form was submitted (POST) or page just opened (GET)\n    if request.method == \"POST\":\n        # Gets email and password typed by user in login form\n        email = request.POST.get(\"email\")\n        password = request.POST.get(\"password\")\n        # Runs SQL query to find matching admin in database\n        with connection.cursor() as cursor:\n            cursor.execute(\n                \"\"\"",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "my_admin",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def my_admin(request):\n    # START: Checks if admin is logged in (via @admin_required decorator)\n    return render(request, \"Backend/index.html\")\n    # END: Opens admin dashboard page\n# ════════════════════════════════════════\n# FUNCTION 7 — MENU MANAGER\n# ════════════════════════════════════════\n@admin_required\ndef menu(request):\n    if request.method == \"POST\":",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def menu(request):\n    if request.method == \"POST\":\n        menu_name = request.POST.get(\"menu_name\")\n        menu_link = request.POST.get(\"menu_link\")\n        submenu = request.POST.get(\"submenu\")\n        parent_id = request.POST.get(\"parent\")\n        position = request.POST.get(\"position\")\n        parent_obj = None\n        if parent_id and parent_id.strip():\n            parent_obj = Main_menuss.objects.filter(id=parent_id).first()",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_menu",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def edit_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    if request.method == \"POST\":\n        # DEBUG: see exactly what the form is sending\n        print(\"POST DATA:\", request.POST)\n        menu_obj.menu_name = request.POST.get(\"menu_name\")\n        menu_obj.menu_link = request.POST.get(\"menu_link\")\n        menu_obj.submenu = request.POST.get(\"submenu\")\n        # safe parent handling\n        parent_id = request.POST.get(\"parent\")",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_menu",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def delete_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    menu_obj.delete()\n    messages.success(request, \"Menu deleted successfully\")\n    return redirect(\"menu\")",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "brandway.wsgi",
+        "description": "brandway.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "brandway.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'brandway.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

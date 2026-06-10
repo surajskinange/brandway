@@ -1793,10 +1793,12 @@ progress {
     var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
 .table > tbody {
+  text-align: center;
   vertical-align: inherit;
 }
 .table > thead {
   vertical-align: bottom;
+  text-align: center;
 }
 .table-group-divider {
   border-top: calc(var(--bs-border-width) * 2) solid currentcolor;
@@ -12443,7 +12445,7 @@ body {
   color: #287f71;
 }
 #sidebar-menu .menuitem-active .tp-link.active {
-  background-color: #287f711a;
+  background-color: #0000001a;
   transition: color 0.2s ease;
   border-radius: 0.475rem;
 }
@@ -14632,12 +14634,12 @@ body.loading {
 #side-menu > li.active > a,
 #side-menu > li:not(.menu-title) > a.active {
   background-color: rgba(13, 110, 253, 0.12);
-  color: #0d6efd;
+  color: #000000;
 }
 #side-menu .nav-second-level li.active > a,
 #side-menu .nav-second-level li > a.active {
   background-color: rgba(13, 110, 253, 0.1);
-  color: #0d6efd;
+  color: #000000;
 }
 #side-menu > li.menu-title {
   margin-top: 1rem;

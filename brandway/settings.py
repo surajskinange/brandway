@@ -63,6 +63,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'accounts.context_processors.menu_context',
             ],
         },
     },
@@ -77,10 +78,10 @@ WSGI_APPLICATION = "brandway.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "brandway",
-        "USER": "root",
-        "PASSWORD": "",
-        "HOST": "localhost",
+        "NAME": "u543626143_pythondjango",
+        "USER": "u543626143_pythonusername",
+        "PASSWORD": "Pythonsuraj@12345",
+        "HOST": "auth-db1085.hstgr.io",
         "PORT": "3306",
     }
 }

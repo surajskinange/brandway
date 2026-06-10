@@ -115,5 +115,15 @@
         <script src="{% static 'admin-assets/libs/feather-icons/feather.min.js' %}"></script>
         <!-- App js-->
         <script src="{% static 'admin-assets/js/app.js' %}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        {% if messages %}
+    {% for message in messages %}
+        <script>
+            toastr.{{ message.tags }}("{{ message }}");
+        </script>
+        {% endfor %}
+{% endif %}
     </body>
 </html>

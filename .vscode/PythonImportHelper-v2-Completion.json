@@ -479,7 +479,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -488,7 +488,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -497,7 +497,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -506,7 +506,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -515,7 +515,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -524,7 +524,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },

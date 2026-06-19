@@ -32,48 +32,43 @@
        <!-- Our Blog Start-->
       <section class="our-blog no-bg-color section-row">
          <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-8 col-md-8 col-sm-8">
-                  <div class="section-title">
-                     <h2 class="wow fadeInUp mb-1" data-wow-delay="0.2s">Insights, ideas, and creative perspectives!</h2>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp text-end" data-wow-delay="0.4s">
-                  <a class='btn btn-dark' href='blog-grid.html'>Read All Posts <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-            </div>
+           
             <div class="blog-section mt-5">
                <div class="row g-4">
-                  <!-- Blog Card 1 -->
+                  {% for blog in blogs %}
                   <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                      <div class="blog-card">
                         <div class="blog-img rounded-4">
-                           <a href='blog-details.html'><img src="{% static 'assets/images/blog/blog-1.jpg' %}" class="img-fluid rounded-4" alt=""></a>
+                           <a href="{% url 'blog_details' blog.slug %}">
+                              {% if blog.image %}
+                              <img src="{{ blog.image.url }}" class="img-fluid rounded-4" alt="{{ blog.title }}">
+                              {% else %}
+                              <img src="{% static 'assets/images/blog/blog-1.jpg' %}" class="img-fluid rounded-4" alt="{{ blog.title }}">
+                              {% endif %}
+                           </a>
                         </div>
                         <div class="blog-content pt-4">
                            <div class="d-flex justify-content-between text-muted">
-                              <small>20 Jan 2026</small><small>04 min read</small>
+                              <small>{{ blog.created_at|date:"d M Y" }}</small><small>04 min read</small>
                            </div>
                            <h3 class="fw-bold mt-3 mb-3">
-                              <a class='h4 fw-bold text-dark' href='blog-details.html'>How Cutting-Edge Digital Marketing Drives Explosive Business Growth</a>
+                              <a class='h4 fw-bold text-dark' href="{% url 'blog_details' blog.slug %}">{{ blog.title }}</a>
                            </h3>
-                           <a class='read-more text-dark' href='blog-details.html'>Read more <i class="fa-solid fa-arrow-right"></i>
+                           <p class="text-muted">{{ blog.content|striptags|truncatewords:18 }}</p>
+                           <a class='read-more text-dark' href="{% url 'blog_details' blog.slug %}">Read more <i class="fa-solid fa-arrow-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
+                  {% empty %}
+                  <div class="col-12 text-center">
+                     <p class="text-muted mb-0">No blogs found.</p>
+                  </div>
+                  {% endfor %}
                  
                </div>
             </div>
-            <div class="pagination-wrap wow fadeInUp mt-5">
-            <ul class="pagination justify-content-center">
-                <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-arrow-left"></i></a></li>
-                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
-            </ul>
-            </div>
+           
          </div>
       </section>
       <!-- Our Blog End-->

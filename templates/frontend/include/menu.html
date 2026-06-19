@@ -98,31 +98,52 @@
             <div class="collapse navbar-collapse main-menu" id="navbar-content">
                 <div class="nav-menu-wrapper">
                     <ul class="navbar-nav mr-auto">
-                        {% for menu in menus %}
-                            {% if menu.main_menuss_set.all %}
-                            <li class="nav-item dropdown">
-                                <a href="{{ menu.menu_link }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                    {{ menu.menu_name }}
-                                </a>
-                                <ul class="dropdown-menu">
-                                    {% for child in menu.main_menuss_set.all %}
-                                    <li class="nav-item">
-                                        <a href="{{ child.menu_link }}" class="nav-link">
-                                            {{ child.menu_name }}
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                            {% else %}
-                            <li class="nav-item">
-                                <a href="{{ menu.menu_link }}" class="nav-link">
-                                    {{ menu.menu_name }}
-                                </a>
-                            </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+
+{% for menu in menus %}
+
+<li class="nav-item {% if menu.main_menuss_set.all %}dropdown{% endif %}">
+
+
+    <a href="{{ menu.menu_link }}" 
+       class="nav-link {% if menu.main_menuss_set.all %}dropdown-toggle{% endif %}"
+       {% if menu.main_menuss_set.all %}
+       data-bs-toggle="dropdown"
+       {% endif %}>
+
+        {{ menu.menu_name }}
+
+    </a>
+
+
+    {% if menu.main_menuss_set.all %}
+
+    <ul class="dropdown-menu">
+
+        {% for child in menu.main_menuss_set.all %}
+
+        <li>
+
+            <a href="{% url 'service' child.id %}" 
+               class="nav-link">
+
+                {{ child.menu_name }}
+
+            </a>
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+
+</li>
+
+{% endfor %}
+
+</ul>
                 </div>
                 <div class="header-btn">
                     <a class="btn btn-dark" href="{% url 'contact' %}">
@@ -198,7 +219,7 @@
                             <ul class="collapse mobile-submenu list-unstyled" id="mobileSubmenu{{ forloop.counter }}">
                                 {% for child in menu.main_menuss_set.all %}
                                 <li>
-                                    <a href="{{ child.menu_link }}">{{ child.menu_name }}</a>
+                                    <a href="{% url 'service' child.id %}">{{ child.menu_name }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>

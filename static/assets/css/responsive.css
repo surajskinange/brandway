@@ -420,7 +420,10 @@
     padding: 15px 0;
   }
   .section-title h2 {
-    font-size: 30px;
+             font-weight: 500;
+        line-height: 32px;
+        font-size: 22px;
+
   }
   .section-title .title-xl {
     font-size: 35px;

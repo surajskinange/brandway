@@ -56,6 +56,166 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -78,6 +238,30 @@
         "importPath": "django.db.models.deletion",
         "description": "django.db.models.deletion",
         "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
         "documentation": {}
     },
     {
@@ -110,6 +294,14 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Prefetch",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -161,27 +353,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "accounts",
+        "description": "accounts",
+        "isExtraImport": true,
+        "detail": "accounts",
         "documentation": {}
     },
     {
@@ -194,6 +378,30 @@
     },
     {
         "label": "Main_menuss",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Contact",
         "importPath": "accounts.models",
         "description": "accounts.models",
         "isExtraImport": true,
@@ -234,11 +442,35 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
         "documentation": {}
     },
     {
@@ -295,6 +527,114 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0005_services",
+        "description": "accounts.migrations.0005_services",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0004_rename_main_menu_main_menuss'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Services',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('service_title', models.CharField(max_length=255)),",
+        "detail": "accounts.migrations.0005_services",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0006_alter_main_menuss_parent_alter_services_menu",
+        "description": "accounts.migrations.0006_alter_main_menuss_parent_alter_services_menu",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0005_services'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='main_menuss',\n            name='parent',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='children', to='accounts.main_menuss'),\n        ),",
+        "detail": "accounts.migrations.0006_alter_main_menuss_parent_alter_services_menu",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0007_service_alter_main_menuss_parent_delete_services_and_more",
+        "description": "accounts.migrations.0007_service_alter_main_menuss_parent_delete_services_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0006_alter_main_menuss_parent_alter_services_menu'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Service',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=200)),",
+        "detail": "accounts.migrations.0007_service_alter_main_menuss_parent_delete_services_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0008_delete_service",
+        "description": "accounts.migrations.0008_delete_service",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0007_service_alter_main_menuss_parent_delete_services_and_more'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Service',\n        ),\n    ]",
+        "detail": "accounts.migrations.0008_delete_service",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0009_service",
+        "description": "accounts.migrations.0009_service",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0008_delete_service'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Service',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=200)),",
+        "detail": "accounts.migrations.0009_service",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0010_delete_service",
+        "description": "accounts.migrations.0010_delete_service",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0009_service'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Service',\n        ),\n    ]",
+        "detail": "accounts.migrations.0010_delete_service",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0011_blog",
+        "description": "accounts.migrations.0011_blog",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0010_delete_service'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Blog',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(blank=True, null=True, upload_to='blogs_image/')),",
+        "detail": "accounts.migrations.0011_blog",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0012_blog_slug",
+        "description": "accounts.migrations.0012_blog_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"accounts\", \"0011_blog\"),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name=\"blog\",\n            name=\"slug\",\n            field=models.SlugField(blank=True, max_length=255, null=True, unique=True),\n        ),",
+        "detail": "accounts.migrations.0012_blog_slug",
+        "documentation": {}
+    },
+    {
+        "label": "populate_blog_slugs",
+        "kind": 2,
+        "importPath": "accounts.migrations.0012_blog_slug",
+        "description": "accounts.migrations.0012_blog_slug",
+        "peekOfCode": "def populate_blog_slugs(apps, schema_editor):\n    Blog = apps.get_model(\"accounts\", \"Blog\")\n    for blog in Blog.objects.all():\n        base_slug = slugify(getattr(blog, \"title\", \"\") or \"blog\") or \"blog\"\n        unique_slug = base_slug\n        counter = 1\n        while Blog.objects.filter(slug=unique_slug).exclude(id=blog.id).exists():\n            counter += 1\n            unique_slug = f\"{base_slug}-{counter}\"\n        blog.slug = unique_slug",
+        "detail": "accounts.migrations.0012_blog_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0013_contact",
+        "description": "accounts.migrations.0013_contact",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0012_blog_slug'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Contact',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255)),",
+        "detail": "accounts.migrations.0013_contact",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0014_service",
+        "description": "accounts.migrations.0014_service",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0013_contact'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Service',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255)),",
+        "detail": "accounts.migrations.0014_service",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0015_service_is_deleted",
+        "description": "accounts.migrations.0015_service_is_deleted",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0014_service'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='service',\n            name='is_deleted',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "accounts.migrations.0015_service_is_deleted",
+        "documentation": {}
+    },
+    {
         "label": "AccountsConfig",
         "kind": 6,
         "importPath": "accounts.apps",
@@ -308,7 +648,7 @@
         "kind": 2,
         "importPath": "accounts.context_processors",
         "description": "accounts.context_processors",
-        "peekOfCode": "def menu_context(request):\n    menus = Main_menuss.objects.filter(\n        parent__isnull=True,\n        is_active=True\n    ).order_by(\"position\")\n    return {\n        'menus': menus\n    }",
+        "peekOfCode": "def menu_context(request):\n    active_children = Main_menuss.objects.filter(is_active=True).order_by(\"position\")\n    menus = Main_menuss.objects.filter(\n        parent__isnull=True,\n        is_active=True\n    ).prefetch_related(\n        Prefetch(\"main_menuss_set\", queryset=active_children, to_attr=\"active_children\")\n    ).order_by(\"position\")\n    return {\n        'menus': menus",
         "detail": "accounts.context_processors",
         "documentation": {}
     },
@@ -326,7 +666,34 @@
         "kind": 6,
         "importPath": "accounts.models",
         "description": "accounts.models",
-        "peekOfCode": "class Main_menuss(models.Model):\n    menu_name = models.CharField(max_length=255)\n    menu_link = models.CharField(max_length=255)\n    submenu = models.CharField(max_length=255)\n    parent = models.ForeignKey(\"self\", on_delete=models.CASCADE, null=True, blank=True)\n    position = models.IntegerField(default=1)\n    is_active = models.BooleanField(default=True)\n    def __str__(self):\n        return self.menu_name",
+        "peekOfCode": "class Main_menuss(models.Model):\n    menu_name = models.CharField(max_length=255)\n    menu_link = models.CharField(max_length=255)\n    submenu = models.CharField(max_length=255)\n    parent = models.ForeignKey(\"self\", on_delete=models.CASCADE, null=True, blank=True)\n    position = models.IntegerField(default=1)\n    is_active = models.BooleanField(default=True)\n    def __str__(self):\n        return self.menu_name\nclass Blog(models.Model):",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Blog",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Blog(models.Model):\n    STATUS_CHOICES = (\n        (1, \"Active\"),\n        (0, \"Inactive\"),\n    )\n    title = models.CharField(max_length=255)\n    slug = models.SlugField(max_length=255, unique=True, blank=True)\n    image = models.ImageField(upload_to=\"blogs_image/\", null=True, blank=True)\n    content = models.TextField()\n    status = models.IntegerField(choices=STATUS_CHOICES, default=1)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Contact",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Contact(models.Model):\n    name = models.CharField(max_length=255)\n    phone = models.CharField(max_length=20)\n    email = models.EmailField()\n    message = models.TextField()\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.name\nclass Service(models.Model):\n    title = models.CharField(max_length=255)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Service(models.Model):\n    title = models.CharField(max_length=255)\n    slug = models.SlugField(max_length=255, unique=True)\n    parent_menu = models.ForeignKey(\n        Main_menuss, on_delete=models.CASCADE, related_name=\"services\"\n    )\n    image = models.ImageField(upload_to=\"services/\", blank=True, null=True)\n    content = models.TextField()\n    status = models.BooleanField(default=True)\n    is_deleted = models.BooleanField(default=False)  # ← ADD THIS FIELD",
         "detail": "accounts.models",
         "documentation": {}
     },
@@ -336,6 +703,15 @@
         "importPath": "accounts.views",
         "description": "accounts.views",
         "peekOfCode": "def menu(request):\n    if request.method == \"POST\":\n        Main_menuss.objects.create(\n            menu_name=request.POST.get(\"menu_name\"),\n            menu_link=request.POST.get(\"menu_link\"),\n            submenu=request.POST.get(\"submenu\"),\n            parent_id=request.POST.get(\"parent\") or None,\n            position=request.POST.get(\"position\") or 1,\n        )\n        return redirect(\"menu\")  # apne url name ke according",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "parent = models.ForeignKey(\n    \"self\",\n    null=True,\n    blank=True,\n    related_name=\"children\",\n    on_delete=models.CASCADE\n)",
         "detail": "accounts.views",
         "documentation": {}
     },
@@ -355,6 +731,240 @@
         "description": "brandway.decorators",
         "peekOfCode": "def admin_required(view_func):\n    def wrapper(request, *args, **kwargs):\n        if \"admin_id\" not in request.session:\n            return redirect(\"admin_login\")\n        return view_func(request, *args, **kwargs)\n    return wrapper",
         "detail": "brandway.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "get_admin_by_credentials",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_admin_by_credentials(email, password):\n    \"\"\"\n    Fetch a single active admin from the database\n    by matching email and password.\n    Returns a tuple (id, name, email, role) or None if not found.\n    \"\"\"\n    with connection.cursor() as cursor:\n        cursor.execute(\n            \"\"\"\n            SELECT id, name, email, role",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_menus",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_all_menus():\n    \"\"\"\n    Return all menu items from the database.\n    Used to populate the menu list page.\n    \"\"\"\n    return Main_menuss.objects.all()\ndef get_parent_obj(parent_id):\n    \"\"\"\n    Safely fetch a parent menu object by ID.\n    Returns the matching Main_menuss object, or None if ID is",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_parent_obj",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_parent_obj(parent_id):\n    \"\"\"\n    Safely fetch a parent menu object by ID.\n    Returns the matching Main_menuss object, or None if ID is\n    missing, blank, or not a valid integer.\n    \"\"\"\n    if parent_id and str(parent_id).strip().isdigit():\n        return Main_menuss.objects.filter(id=parent_id).first()\n    return None\ndef create_menu(menu_name, menu_link, parent_id, position, submenu=\"\"):",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "create_menu",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def create_menu(menu_name, menu_link, parent_id, position, submenu=\"\"):\n    \"\"\"\n    Create and save a new menu item.\n    Resolves parent_id to a parent object (or None).\n    Defaults position to 1 if not provided.\n    \"\"\"\n    parent_obj = get_parent_obj(parent_id)\n    return Main_menuss.objects.create(\n        menu_name=menu_name,\n        menu_link=menu_link,",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "update_menu",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def update_menu(menu_obj, menu_name, menu_link, parent_id, position, submenu=\"\"):\n    \"\"\"\n    Update an existing menu item with new values and save it.\n    Safely handles blank or non-numeric parent_id and position.\n    Returns the updated menu object.\n    \"\"\"\n    menu_obj.menu_name = menu_name\n    menu_obj.menu_link = menu_link\n    menu_obj.submenu = submenu\n    menu_obj.parent = get_parent_obj(parent_id)",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "delete_menu_by_obj",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def delete_menu_by_obj(menu_obj):\n    \"\"\"\n    Delete the given menu object from the database.\n    \"\"\"\n    menu_obj.delete()\ndef get_all_blogs():\n    \"\"\"\n    Return all blog posts for the admin blog list.\n    \"\"\"\n    return Blog.objects.all()",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_blogs",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_all_blogs():\n    \"\"\"\n    Return all blog posts for the admin blog list.\n    \"\"\"\n    return Blog.objects.all()\ndef get_active_blogs():\n    \"\"\"\n    Return active blog posts for the frontend blog page.\n    \"\"\"\n    return Blog.objects.filter(status=1)",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_active_blogs",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_active_blogs():\n    \"\"\"\n    Return active blog posts for the frontend blog page.\n    \"\"\"\n    return Blog.objects.filter(status=1)\ndef get_blog_by_id(blog_id):\n    \"\"\"\n    Safely fetch a blog by ID.\n    \"\"\"\n    if blog_id and str(blog_id).strip().isdigit():",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_blog_by_id",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_blog_by_id(blog_id):\n    \"\"\"\n    Safely fetch a blog by ID.\n    \"\"\"\n    if blog_id and str(blog_id).strip().isdigit():\n        return Blog.objects.filter(id=blog_id).first()\n    return None\ndef unique_blog_slug(title, slug=None, blog_id=None):\n    \"\"\"\n    Build a unique slug for a blog, excluding the current blog while editing.",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "unique_blog_slug",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def unique_blog_slug(title, slug=None, blog_id=None):\n    \"\"\"\n    Build a unique slug for a blog, excluding the current blog while editing.\n    \"\"\"\n    base_slug = slugify(slug or title) or \"blog\"\n    unique_slug = base_slug\n    counter = 1\n    while Blog.objects.filter(slug=unique_slug).exclude(id=blog_id).exists():\n        counter += 1\n        unique_slug = f\"{base_slug}-{counter}\"",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "create_blog",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def create_blog(title, slug, image, content, status):\n    \"\"\"\n    Create and save a new blog post.\n    \"\"\"\n    return Blog.objects.create(\n        title=title,\n        slug=unique_blog_slug(title, slug),\n        image=image,\n        content=content,\n        status=status,",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "update_blog",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def update_blog(blog_obj, title, slug, image, content, status):\n    \"\"\"\n    Update an existing blog post. Keeps the old image if no new image is sent.\n    \"\"\"\n    blog_obj.title = title\n    blog_obj.slug = unique_blog_slug(title, slug, blog_obj.id)\n    blog_obj.content = content\n    blog_obj.status = status\n    if image:\n        blog_obj.image = image",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "delete_blog_by_obj",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def delete_blog_by_obj(blog_obj):\n    \"\"\"\n    Delete the given blog post from the database.\n    \"\"\"\n    blog_obj.delete()\ndef contact_save(name, phone, email, message):\n    \"\"\"\n    Save a new contact message.\n    \"\"\"\n    return Contact.objects.create(name=name, phone=phone, email=email, message=message)",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "contact_save",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def contact_save(name, phone, email, message):\n    \"\"\"\n    Save a new contact message.\n    \"\"\"\n    return Contact.objects.create(name=name, phone=phone, email=email, message=message)\ndef get_all_contacts():\n    \"\"\"\n    Return all contact inquiries for the admin contact inquiry list.\n    \"\"\"\n    return Contact.objects.all().order_by(\"-created_at\")",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_contacts",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_all_contacts():\n    \"\"\"\n    Return all contact inquiries for the admin contact inquiry list.\n    \"\"\"\n    return Contact.objects.all().order_by(\"-created_at\")\ndef get_all_services():\n    return Service.objects.select_related(\"parent_menu\").all().order_by(\"-id\")\n# queries.py\ndef get_service_by_id(service_id):\n    \"\"\"Fetch a single service by ID\"\"\"",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_services",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_all_services():\n    return Service.objects.select_related(\"parent_menu\").all().order_by(\"-id\")\n# queries.py\ndef get_service_by_id(service_id):\n    \"\"\"Fetch a single service by ID\"\"\"\n    try:\n        return Service.objects.get(id=service_id, is_deleted=False)\n    except Service.DoesNotExist:\n        return None\ndef update_service(",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_service_by_id",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_service_by_id(service_id):\n    \"\"\"Fetch a single service by ID\"\"\"\n    try:\n        return Service.objects.get(id=service_id, is_deleted=False)\n    except Service.DoesNotExist:\n        return None\ndef update_service(\n    service_id, title, slug, parent_menu_id, content, status, image_file=None\n):\n    \"\"\"Update an existing service\"\"\"",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "update_service",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def update_service(\n    service_id, title, slug, parent_menu_id, content, status, image_file=None\n):\n    \"\"\"Update an existing service\"\"\"\n    service = get_service_by_id(service_id)\n    if not service:\n        raise ValueError(\"Service not found\")\n    service.title = title\n    service.slug = slug\n    service.parent_menu_id = parent_menu_id",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "insert_service",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def insert_service(title, slug, parent_menu_id, image_file, content, status):\n    \"\"\"Create a new service\"\"\"\n    service = Service.objects.create(\n        title=title,\n        slug=slug,\n        parent_menu_id=parent_menu_id,\n        content=content,\n        status=status,\n        image=image_file,\n    )",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "delete_service",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def delete_service(service_id):\n    \"\"\"Soft delete a service\"\"\"\n    try:\n        service = Service.objects.get(id=service_id)\n        service.is_deleted = True\n        service.save()\n        return True\n    except Service.DoesNotExist:\n        return False\ndef get_all_services():",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_services",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_all_services():\n    \"\"\"Get all non-deleted services\"\"\"\n    return Service.objects.filter(is_deleted=False).order_by(\"-created_at\")\ndef get_service_by_id(service_id):\n    \"\"\"Fetch a single service by ID\"\"\"\n    try:\n        return Service.objects.get(id=service_id, is_deleted=False)\n    except Service.DoesNotExist:\n        return None\ndef get_services_by_menu_id(menu_id):",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_service_by_id",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_service_by_id(service_id):\n    \"\"\"Fetch a single service by ID\"\"\"\n    try:\n        return Service.objects.get(id=service_id, is_deleted=False)\n    except Service.DoesNotExist:\n        return None\ndef get_services_by_menu_id(menu_id):\n    \"\"\"Get services by menu ID\"\"\"\n    return Service.objects.filter(\n        parent_menu_id=menu_id, is_deleted=False, status=1",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_services_by_menu_id",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_services_by_menu_id(menu_id):\n    \"\"\"Get services by menu ID\"\"\"\n    return Service.objects.filter(\n        parent_menu_id=menu_id, is_deleted=False, status=1\n    ).order_by(\"title\")\ndef get_menus_with_services():\n    \"\"\"Get menus with their services\"\"\"\n    from django.db.models import Prefetch\n    menus = Menu.objects.filter(is_deleted=False, status=1).prefetch_related(\n        Prefetch(",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_menus_with_services",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_menus_with_services():\n    \"\"\"Get menus with their services\"\"\"\n    from django.db.models import Prefetch\n    menus = Menu.objects.filter(is_deleted=False, status=1).prefetch_related(\n        Prefetch(\n            \"service_set\", queryset=Service.objects.filter(is_deleted=False, status=1)\n        )\n    )\n    return menus\ndef get_menus_with_services():",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_menus_with_services",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_menus_with_services():\n    menus = Main_menuss.objects.filter(\n        parent_id=None,\n        is_active=1\n    ).prefetch_related(\n        'main_menuss_set'\n    )\n    return menus\ndef get_menus_with_services():\n    menus = Main_menuss.objects.filter(",
+        "detail": "brandway.queries",
+        "documentation": {}
+    },
+    {
+        "label": "get_menus_with_services",
+        "kind": 2,
+        "importPath": "brandway.queries",
+        "description": "brandway.queries",
+        "peekOfCode": "def get_menus_with_services():\n    menus = Main_menuss.objects.filter(\n        parent_id=None,\n        is_active=1\n    ).prefetch_related(\n        'main_menuss_set',\n        'service_set'\n    )\n    return menus",
+        "detail": "brandway.queries",
         "documentation": {}
     },
     {
@@ -434,7 +1044,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "WSGI_APPLICATION = \"brandway.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"u543626143_pythondjango\",\n        \"USER\": \"u543626143_pythonusername\",\n        \"PASSWORD\": \"Pythonsuraj@12345\",\n        \"HOST\": \"auth-db1085.hstgr.io\",",
+        "peekOfCode": "WSGI_APPLICATION = \"brandway.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\n# DATABASES = {\n#     \"default\": {\n#         \"ENGINE\": \"django.db.backends.mysql\",\n#         \"NAME\": \"u543626143_pythondjango\",\n#         \"USER\": \"u543626143_pythonusername\",\n#         \"PASSWORD\": \"Pythonsuraj@12345\",\n#         \"HOST\": \"auth-db1085.hstgr.io\",",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -443,7 +1053,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"u543626143_pythondjango\",\n        \"USER\": \"u543626143_pythonusername\",\n        \"PASSWORD\": \"Pythonsuraj@12345\",\n        \"HOST\": \"auth-db1085.hstgr.io\",\n        \"PORT\": \"3306\",\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"brandway\",\n        \"USER\": \"root\",\n        \"PASSWORD\": \"\",\n        \"HOST\": \"localhost\",\n        \"PORT\": \"3306\",\n    }\n}",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -488,7 +1098,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\nMEDIA_URL = \"/media/\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -497,7 +1107,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -506,7 +1116,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -515,7 +1125,7 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -524,7 +1134,25 @@
         "kind": 5,
         "importPath": "brandway.settings",
         "description": "brandway.settings",
-        "peekOfCode": "STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "MEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "brandway.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "brandway.settings",
+        "description": "brandway.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "brandway.settings",
         "documentation": {}
     },
@@ -551,7 +1179,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def home(request):\n    context = {\n        \"page_title\": \"Brandway - Digital Marketing, Branding & Web Solutions\",\n        \"page_description\": \"Brandway helps businesses grow with digital marketing...\",\n    }\n    return render(request, \"frontend/index.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 2 — ABOUT PAGE\n# ════════════════════════════════════════\ndef about(request):",
+        "peekOfCode": "def home(request):\n    context = {\n        \"page_title\": \"Brandway - Digital Marketing, Branding & Web Solutions\",\n        \"page_description\": \"Brandway helps businesses grow with digital marketing...\",\n    }\n    return render(request, \"frontend/index.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 2 — ABOUT PAGE\n# Simply renders the About page with page title and description.\n# No database calls needed.",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -560,7 +1188,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def about(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"About Brandway - Digital Marketing & Branding Agency\",\n        \"page_description\": \"Learn about Brandway...\",\n    }\n    return render(request, \"frontend/about.html\", context)\n    # END: Opens about page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 3 — BLOG PAGE",
+        "peekOfCode": "def about(request):\n    context = {\n        \"page_title\": \"About Brandway - Digital Marketing & Branding Agency\",\n        \"page_description\": \"Learn about Brandway...\",\n    }\n    return render(request, \"frontend/about.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 3 — BLOG LISTING PAGE\n# Fetches all active/published blogs from DB and shows them on the blog page.\n# ════════════════════════════════════════",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -569,7 +1197,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def blog(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"Brandway Blog - Digital Marketing, SEO...\",\n        \"page_description\": \"Explore the Brandway Blog...\",\n    }\n    return render(request, \"frontend/blog.html\", context)\n    # END: Opens blog page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 4 — CONTACT PAGE",
+        "peekOfCode": "def blog(request):\n    context = {\n        \"page_title\": \"Brandway Blog - Digital Marketing, SEO...\",\n        \"page_description\": \"Explore the Brandway Blog...\",\n        \"blogs\": queries.get_active_blogs(),\n    }\n    return render(request, \"frontend/blog.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 4 — CONTACT PAGE\n# GET  → shows the empty contact form.",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -578,7 +1206,34 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def contact(request):\n    # START: Sets page title and description for SEO\n    context = {\n        \"page_title\": \"Contact Brandway...\",\n        \"page_description\": \"Get in touch with Brandway...\",\n    }\n    return render(request, \"frontend/contact.html\", context)\n    # END: Opens contact page template and sends context data to it\n# ════════════════════════════════════════\n# FUNCTION 5 — ADMIN LOGIN",
+        "peekOfCode": "def contact(request):\n    if request.method == \"POST\":\n        name = (request.POST.get(\"name\") or \"\").strip()\n        phone = (request.POST.get(\"phone\") or \"\").strip()\n        email = (request.POST.get(\"email\") or \"\").strip()\n        message = (request.POST.get(\"message\") or \"\").strip()\n        if not name or not phone or not email or not message:\n            messages.error(request, \"All fields are required\")\n            return redirect(\"contact\")\n        queries.contact_save(name, phone, email, message)",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def service(request, id):\n    services = queries.get_services_by_menu_id(id)\n    context = {\n        \"page_title\": \"hello - Brandway\",\n        \"page_description\": \"Discover our services\",\n        \"services\": services,\n    }\n    return render(request, \"frontend/services.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 6 — SERVICE DETAILS PAGE",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "service_details",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def service_details(request):\n    context = {\n        \"page_title\": \"Service Details - Brandway\",\n        \"page_description\": \"Learn more about our specific service offerings at Brandway...\",\n    }\n    return render(request, \"frontend/services-details.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 6B — BLOG DETAIL PAGE\n# Fetches a single blog post by slug from URL.\n# Shows 404 if slug does not match any active blog.",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "blog_details",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def blog_details(request, slug):\n    blog = get_object_or_404(queries.get_active_blogs(), slug=slug)\n    context = {\n        \"page_title\": f\"{blog.title} - Brandway Blog\",\n        \"page_description\": blog.content[:150],\n        \"blog\": blog,\n    }\n    return render(request, \"frontend/blog-details.html\", context)\n# ════════════════════════════════════════\n# FUNCTION 7 — ADMIN LOGIN",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -587,7 +1242,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def admin_login(request):\n    # START: Checks if form was submitted (POST) or page just opened (GET)\n    if request.method == \"POST\":\n        # Gets email and password typed by user in login form\n        email = request.POST.get(\"email\")\n        password = request.POST.get(\"password\")\n        # Runs SQL query to find matching admin in database\n        with connection.cursor() as cursor:\n            cursor.execute(\n                \"\"\"",
+        "peekOfCode": "def admin_login(request):\n    if request.method == \"POST\":\n        email = request.POST.get(\"email\")\n        password = request.POST.get(\"password\")\n        user = queries.get_admin_by_credentials(email, password)\n        if user:\n            request.session[\"admin_id\"] = user[0]\n            request.session[\"admin_name\"] = user[1]\n            request.session[\"admin_role\"] = user[3]\n            return redirect(\"my_admin\")",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -596,7 +1251,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def my_admin(request):\n    # START: Checks if admin is logged in (via @admin_required decorator)\n    return render(request, \"Backend/index.html\")\n    # END: Opens admin dashboard page\n# ════════════════════════════════════════\n# FUNCTION 7 — MENU MANAGER\n# ════════════════════════════════════════\n@admin_required\ndef menu(request):\n    if request.method == \"POST\":",
+        "peekOfCode": "def my_admin(request):\n    return render(request, \"Backend/index.html\")\n# ════════════════════════════════════════\n# FUNCTION 9 — MENU MANAGER (Admin)\n# Protected by @admin_required.\n# GET  → fetches all menus from DB and shows menu list.\n# POST → reads 4 form fields, saves new menu item to DB via queries.py.\n# ════════════════════════════════════════\n@admin_required\ndef menu(request):",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -605,7 +1260,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def menu(request):\n    if request.method == \"POST\":\n        menu_name = request.POST.get(\"menu_name\")\n        menu_link = request.POST.get(\"menu_link\")\n        submenu = request.POST.get(\"submenu\")\n        parent_id = request.POST.get(\"parent\")\n        position = request.POST.get(\"position\")\n        parent_obj = None\n        if parent_id and parent_id.strip():\n            parent_obj = Main_menuss.objects.filter(id=parent_id).first()",
+        "peekOfCode": "def menu(request):\n    if request.method == \"POST\":\n        queries.create_menu(\n            menu_name=request.POST.get(\"menu_name\"),\n            menu_link=request.POST.get(\"menu_link\"),\n            parent_id=request.POST.get(\"parent\"),\n            position=request.POST.get(\"position\"),\n        )\n        messages.success(request, \"Menu saved successfully\")\n        return redirect(\"menu\")",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -614,7 +1269,7 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def edit_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    if request.method == \"POST\":\n        # DEBUG: see exactly what the form is sending\n        print(\"POST DATA:\", request.POST)\n        menu_obj.menu_name = request.POST.get(\"menu_name\")\n        menu_obj.menu_link = request.POST.get(\"menu_link\")\n        menu_obj.submenu = request.POST.get(\"submenu\")\n        # safe parent handling\n        parent_id = request.POST.get(\"parent\")",
+        "peekOfCode": "def edit_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    if request.method == \"POST\":\n        queries.update_menu(\n            menu_obj=menu_obj,\n            menu_name=request.POST.get(\"menu_name\"),\n            menu_link=request.POST.get(\"menu_link\"),\n            parent_id=request.POST.get(\"parent\"),\n            position=request.POST.get(\"position\"),\n        )",
         "detail": "brandway.views",
         "documentation": {}
     },
@@ -623,7 +1278,34 @@
         "kind": 2,
         "importPath": "brandway.views",
         "description": "brandway.views",
-        "peekOfCode": "def delete_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    menu_obj.delete()\n    messages.success(request, \"Menu deleted successfully\")\n    return redirect(\"menu\")",
+        "peekOfCode": "def delete_menu(request, id):\n    menu_obj = get_object_or_404(Main_menuss, id=id)\n    queries.delete_menu_by_obj(menu_obj)\n    messages.success(request, \"Menu deleted successfully\")\n    return redirect(\"menu\")\n# ════════════════════════════════════════\n# FUNCTION 12 — BLOG SAVE / DELETE (Admin)\n# Protected by @admin_required. Handles 3 cases in one function:\n# DELETE → if delete_id present in POST, deletes that blog.\n# UPDATE → if blog_id present in POST, updates that existing blog.",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "blogsave",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def blogsave(request):\n    if request.method == \"POST\":\n        delete_id = request.POST.get(\"delete_id\")\n        if delete_id:\n            blog_obj = queries.get_blog_by_id(delete_id)\n            if blog_obj:\n                queries.delete_blog_by_obj(blog_obj)\n                messages.success(request, \"Blog deleted successfully\")\n            else:\n                messages.error(request, \"Blog not found\")",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact_queries",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def contact_queries(request):\n    return render(\n        request,\n        \"Backend/contact-queries.html\",\n        {\"contacts\": queries.get_all_contacts()},\n    )\n@admin_required\ndef manage_services(request):\n    if request.method == \"POST\":\n        if \"delete_id\" in request.POST:",
+        "detail": "brandway.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_services",
+        "kind": 2,
+        "importPath": "brandway.views",
+        "description": "brandway.views",
+        "peekOfCode": "def manage_services(request):\n    if request.method == \"POST\":\n        if \"delete_id\" in request.POST:\n            queries.delete_service(request.POST.get(\"delete_id\"))\n            messages.success(request, \"Service deleted successfully.\")\n            return redirect(\"manage_services\")\n        service_id = request.POST.get(\"service_id\")\n        title = request.POST.get(\"service_title\")\n        slug = request.POST.get(\"slug\")\n        parent_menu_id = request.POST.get(\"parent_menu_id\")",
         "detail": "brandway.views",
         "documentation": {}
     },

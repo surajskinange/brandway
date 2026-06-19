@@ -26,6 +26,10 @@
         <!-- Icons -->
         <link href="{% static 'admin-assets/css/icons.min.css' %}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+        <!-- editor -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.3.2/ckeditor.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <!-- body start -->
     <body data-menu-color="light" data-sidebar="default">
@@ -55,7 +59,6 @@
                                     <i data-feather="maximize" class="align-middle fullscreen noti-icon"></i>
                                 </button>
                             </li>
-                           
                             <li class="dropdown notification-list topbar-dropdown">
                                 <a
                                     class="nav-link dropdown-toggle nav-user me-0"
@@ -77,7 +80,6 @@
                                         <h6 class="text-overflow m-0">Welcome ! {{ request.session.admin_name }}</h6>
                                     </div>
                                     <!-- item-->
-                                   
                                     <!-- item-->
                                     <div class="dropdown-divider"></div>
                                     <!-- item-->
@@ -129,7 +131,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="tp-link" href="#">
+                                <a class="tp-link" href="{% url 'manage_services' %}">
                                     <i data-feather="briefcase"></i>
                                     <span> Service</span>
                                 </a>
@@ -165,13 +167,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="tp-link" href="#">
+                                <a class="tp-link" href="{% url 'blog-save' %}">
                                     <i data-feather="book"></i>
                                     <span> Blog</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="tp-link" href="#">
+                                <a class="tp-link" href="{% url 'contact_queries' %}">
                                     <i data-feather="phone"></i>
                                     <span> Contact Inquiry</span>
                                 </a>

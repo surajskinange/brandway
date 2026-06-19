@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from accounts import models
 from accounts.models import Main_menuss
 
 
@@ -17,4 +18,12 @@ def menu(request):
     menus = Main_menuss.objects.all()
     return render(request, "Backend/menu.html", {"menus": menus})
 
+
+parent = models.ForeignKey(
+    "self",
+    null=True,
+    blank=True,
+    related_name="children",
+    on_delete=models.CASCADE
+)
 

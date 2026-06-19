@@ -1,0 +1,106 @@
+{% load static %}
+<!-- Topbar Start -->
+{% include 'Backend/includes/topbar.html' %}
+<!-- end Topbar -->
+<style>
+    #datatable-buttons_wrapper .row:first-child {
+        align-items: center;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    #datatable-buttons_wrapper .dataTables_filter input {
+        margin-left: 0 !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_paginate {
+        display: flex;
+        justify-content: end;
+        text-align: left !important;
+    }
+
+    #datatable-buttons_wrapper .dataTables_paginate ul.pagination {
+        justify-content: flex-start !important;
+    }
+
+    @media (max-width: 767.98px) {
+        #datatable-buttons_wrapper,
+        #datatable-buttons_wrapper .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #datatable-buttons_wrapper table {
+            min-width: 900px;
+        }
+    }
+</style>
+
+<div class="content-page">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
+                <h5 class="mb-0">Contact Inquiries</h5>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Contact Inquiry Table</h5>
+                        </div>
+                        <div class="card-body mt">
+                            <div class="table-responsive">
+                                <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap mt-3 w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Message</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for contact in contacts %}
+                                        <tr>
+                                            <td>{{ contact.id }}</td>
+                                            <td>{{ contact.name }}</td>
+                                            <td>
+                                                <a href="tel:{{ contact.phone }}" class="text-dark">{{ contact.phone }}</a>
+                                            </td>
+                                            <td>
+                                                <a href="mailto:{{ contact.email }}" class="text-dark">{{ contact.email }}</a>
+                                            </td>
+                                            <td>{{ contact.message|linebreaksbr }}</td>
+                                            <td>{{ contact.created_at|date:"d M Y, h:i A" }}</td>
+                                        </tr>
+                                        {% empty %}
+                                        <tr>
+                                            <td colspan="6" class="text-center">No contact inquiries found</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'Backend/includes/footer.html' %}

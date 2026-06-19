@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   {% include 'frontend/include/header.html' %}
+   <body>
+      <!-- Preloader Start -->
+      <div class="preloader">
+         <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="{% static 'images/loader.svg' %}" alt=""></div>
+         </div>
+      </div>
+      <!-- Preloader End -->
+      <!-- Header Start -->
+    {% include 'frontend/include/menu.html' %}
+      <!-- Header End -->
+      <!-- SubHeader Start-->
+      <section class="page-subheader">
+         <div class="container">           
+            <div class="section-title text-center mb-4">
+               <h1 class="text-white title-xl wow fadeInUp" data-wow-delay="0.2s">Services Details</h1>
+            </div>
+            <div class="row align-items-center justify-content-center wow fadeInUp">
+               
+                <div class="col-lg-12 text-center">
+                    <p class="text-white m-0">At Stratum, we deliver innovative digital solutions that help brands thrive. From web and app development to data-driven marketing.</p>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- SubHeader End--> 
+      <!-- Service Content Start -->
+      <section class="section-row pb-5">
+         <div class="container">
+            <div class="row">               
+               <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInUp">
+                  <div class="section-title">
+                     <h2 class="wow fadeInUp">
+                        Mobile Applications
+                     </h2>
+                  </div>                  
+               </div>
+               <div class="col-lg-8 col-md-12 col-sm-12 wow fadeInUp">
+                  <p>At Stratum, we help brands grow through smart digital solutions—from high-performing websites and apps to powerful, data-driven marketing strategies.</p>
+                  <a href="#" class="btn btn-dark">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+               </div>
+               <div class="col-lg-12 mt-5 wow zoomIn">
+                <img src="assets/images/services/banner.jpg" alt="" class="img-fluid rounded-4">    
+               </div>
+               <div class="col-lg-12 mt-5 wow fadeInUp">
+                <h2>Wireframing & App Architecture</h2>
+                <p>We design clear, user-focused wireframes and robust app architectures that lay the foundation for scalable, high-performing digital products. Our process ensures seamless user journeys and efficient development workflows. Our wireframing and app architecture services nec mattis risus auris conse quat viverra sapien focus on usability, scalability, and clarity—ensuring every product is built on a solid digital foundation.</p>
+                <p>We plan and structure your application with detailed wireframes and a strong architectural framework to ensure performance, scalability, and long-term success.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Service Content End -->
+               
+      <!-- Services Details Start -->
+      <section class="services-details section-row">
+         <div class="container">
+    <div class="row g-5">
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-8">
+        <!-- Feature List -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <ul class="list-unstyled wow fadeInUp" data-wow-delay="0.2s">
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Market & Competitor Analysis</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Technology Stack Selection</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Project Roadmap & Timeline</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled wow fadeInUp" data-wow-delay="0.4s">
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Low-Fidelity Wireframes</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> User Flow Mapping</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Information Architecture</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled wow fadeInUp" data-wow-delay="0.6s">
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> High-Fidelity Design</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Interactive Prototypes</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Usability Testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- QA Section -->
+         <div class="wow fadeInUp" data-wow-delay="0.8s">
+        <h3 class="fw-bold mb-3">Quality Assurance & Testing</h3>
+        <p class="mb-4">
+          We ensure product stability and performance through rigorous testing
+          processes, identifying issues early to deliver a seamless user
+          experience across all platforms.
+        </p>
+        </div>
+
+        <!-- Image + Bullet Points -->
+        <div class="row mb-5 wow fadeInUp" data-wow-delay="0.10s">
+          <div class="col-md-5">
+            <img src="{% static 'assets/images/services/single-service.jpg' %}" class="img-fluid rounded-4 h-100" alt="">
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Creating Tomorrow’s Leaders Today</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Play & Learn – Big Discoveries</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Learning Made Fun & Engaging</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Friendship, Growth & Exploration</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Building Foundations for Tomorrow</li>
+              <li class="mb-2"><i class="small fa-solid fa-star-of-life"></i> Learning Made Fun & Engaging</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Deployment -->
+         <div class="wow fadeInUp" data-wow-delay="0.12s">
+        <h3 class="fw-bold mb-3">Deployment & App Store Launch</h3>
+        <p>
+          From server setup to App Store deployment, we handle the entire launch
+          process to ensure smooth publishing, compliance, and performance.
+        </p>
+        <p>We plan and structure your application with detailed wireframes and a strong architectural framework to ensure performance, scalability, and long-term success.</p>
+        </div>
+        
+    </div>
+
+      <!-- RIGHT CARDS -->
+      <div class="col-lg-4">
+        <div class="d-flex flex-column gap-4">
+          <!-- Card 01 -->
+          <div class="p-4 bg-dark text-white rounded-4 wow fadeInRight" data-wow-delay="0.4s">
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-danger rounded-circle p-3 me-3">01</span>
+              <h4 class="mb-0 text-white">Exploring Through Play</h4>
+            </div>
+            <p class="small text-white mb-0">
+              Interactive experiences designed to inspire curiosity and learning
+              through play-based exploration.
+            </p>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="p-4 bg-dark text-white rounded-4 wow fadeInRight" data-wow-delay="0.6s">
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-danger rounded-circle p-3 me-3">02</span>
+              <h4 class="mb-0 text-white">Building a Foundation</h4>
+            </div>
+            <p class="small text-white mb-0">
+              Strong digital foundations built for scalability, performance,
+              and long-term success.
+            </p>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="p-4 bg-dark text-white rounded-4 wow fadeInRight" data-wow-delay="0.8s">
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-danger rounded-circle p-3 me-3">03</span>
+              <h4 class="mb-0 text-white">Home of Happy Learners</h4>
+            </div>
+            <p class="small text-white mb-0">
+              Creating joyful learning environments that engage, inspire,
+              and empower users.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+  </div>
+         </div>
+      </section>
+      <!-- Services Details  End -->
+       
+    {% include 'frontend/include/footer.html' %}
+       <!-- Footer End -->
+       <!-- Back To Top Start -->
+    
+   </body>
+</html>

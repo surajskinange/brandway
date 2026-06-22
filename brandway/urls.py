@@ -17,6 +17,7 @@ from .views import (
     service_details,
     blog_details,
     contact_queries,
+    manage_services,
 )
 
 urlpatterns = [
@@ -30,18 +31,22 @@ urlpatterns = [
     # AUTH
     path("login/", admin_login, name="admin_login"),
     # DASHBOARD
-    path("dashboard/", my_admin, name="dashboard"), 
+    path("dashboard/", my_admin, name="dashboard"),
     # MENU
     path("menu/", menu, name="menu"),
     path("menu/edit/<int:id>/", edit_menu, name="edit_menu"),
     path("menu/delete/<int:id>/", delete_menu, name="delete_menu"),
     # SERVICES
     path("services/<int:id>/", service, name="service"),
-    path("services-details", service_details, name="service_details"),
+    path("services/<slug:slug>/", service_details, name="service_details"),
+    # BLOG
     path("blog-save/", blogsave, name="blog-save"),
     path("blog-details/<slug:slug>/", blog_details, name="blog_details"),
-    path("contact-queries/", contact_queries, name="contact_queries"), 
-]
+    # CONTACT
+    path("contact-queries/", contact_queries, name="contact_queries"),
+    #backend service page 
+    path("service-save/", manage_services, name="manage_services"),
+] 
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

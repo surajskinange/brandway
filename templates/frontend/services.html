@@ -70,7 +70,8 @@
                                 {{ service.content|safe }}
                             </div>
                             <div class="header-btn mt-3">
-                                <a class="btn btn-dark" href="{% url 'service' service.id %}">
+                                               <a class="btn btn-dark" href="{% url 'service_details' slug=service.slug %}">
+
                                     Get A Demo
                                 </a>
                             </div>

@@ -4,6 +4,7 @@
 # ════════════════════════════════════════════════════════════════
 
 from django.db import connection
+from django.db.models import Prefetch
 from django.utils.text import slugify
 
 from accounts.models import Main_menuss, Service, Blog, Contact
@@ -14,11 +15,7 @@ from accounts.models import Main_menuss, Service, Blog, Contact
 
 
 def get_admin_by_credentials(email, password):
-    """
-    Fetch a single active admin from the database
-    by matching email and password.
-    Returns a tuple (id, name, email, role) or None if not found.
-    """
+    """Fetch a single active admin by matching email and password."""
     with connection.cursor() as cursor:
         cursor.execute(
             """
@@ -37,30 +34,19 @@ def get_admin_by_credentials(email, password):
 
 
 def get_all_menus():
-    """
-    Return all menu items from the database.
-    Used to populate the menu list page.
-    """
+    """Return all menu items."""
     return Main_menuss.objects.all()
 
 
 def get_parent_obj(parent_id):
-    """
-    Safely fetch a parent menu object by ID.
-    Returns the matching Main_menuss object, or None if ID is
-    missing, blank, or not a valid integer.
-    """
+    """Safely fetch a parent menu object by ID."""
     if parent_id and str(parent_id).strip().isdigit():
         return Main_menuss.objects.filter(id=parent_id).first()
     return None
 
 
 def create_menu(menu_name, menu_link, parent_id, position, submenu=""):
-    """
-    Create and save a new menu item.
-    Resolves parent_id to a parent object (or None).
-    Defaults position to 1 if not provided.
-    """
+    """Create and save a new menu item."""
     parent_obj = get_parent_obj(parent_id)
     return Main_menuss.objects.create(
         menu_name=menu_name,
@@ -72,11 +58,7 @@ def create_menu(menu_name, menu_link, parent_id, position, submenu=""):
 
 
 def update_menu(menu_obj, menu_name, menu_link, parent_id, position, submenu=""):
-    """
-    Update an existing menu item with new values and save it.
-    Safely handles blank or non-numeric parent_id and position.
-    Returns the updated menu object.
-    """
+    """Update an existing menu item and save it."""
     menu_obj.menu_name = menu_name
     menu_obj.menu_link = menu_link
     menu_obj.submenu = submenu
@@ -89,39 +71,45 @@ def update_menu(menu_obj, menu_name, menu_link, parent_id, position, submenu="")
 
 
 def delete_menu_by_obj(menu_obj):
-    """
-    Delete the given menu object from the database.
-    """
+    """Delete the given menu object."""
     menu_obj.delete()
 
 
+def get_menus_with_services():
+    """Get top-level active menus with their child menus and services prefetched."""
+    return Main_menuss.objects.filter(
+        parent_id=None,
+        is_active=1,
+    ).prefetch_related(
+        "main_menuss_set",
+        "service_set",
+    )
+
+
+# ════════════════════════════════════════
+# BLOG QUERIES
+# ════════════════════════════════════════
+
+
 def get_all_blogs():
-    """
-    Return all blog posts for the admin blog list.
-    """
+    """Return all blog posts for the admin blog list."""
     return Blog.objects.all()
 
 
 def get_active_blogs():
-    """
-    Return active blog posts for the frontend blog page.
-    """
+    """Return active blog posts for the frontend blog page."""
     return Blog.objects.filter(status=1)
 
 
 def get_blog_by_id(blog_id):
-    """
-    Safely fetch a blog by ID.
-    """
+    """Safely fetch a blog by ID."""
     if blog_id and str(blog_id).strip().isdigit():
         return Blog.objects.filter(id=blog_id).first()
     return None
 
 
 def unique_blog_slug(title, slug=None, blog_id=None):
-    """
-    Build a unique slug for a blog, excluding the current blog while editing.
-    """
+    """Build a unique slug for a blog, excluding the current blog while editing."""
     base_slug = slugify(slug or title) or "blog"
     unique_slug = base_slug
     counter = 1
@@ -134,9 +122,7 @@ def unique_blog_slug(title, slug=None, blog_id=None):
 
 
 def create_blog(title, slug, image, content, status):
-    """
-    Create and save a new blog post.
-    """
+    """Create and save a new blog post."""
     return Blog.objects.create(
         title=title,
         slug=unique_blog_slug(title, slug),
@@ -147,9 +133,7 @@ def create_blog(title, slug, image, content, status):
 
 
 def update_blog(blog_obj, title, slug, image, content, status):
-    """
-    Update an existing blog post. Keeps the old image if no new image is sent.
-    """
+    """Update an existing blog post. Keeps old image if no new image sent."""
     blog_obj.title = title
     blog_obj.slug = unique_blog_slug(title, slug, blog_obj.id)
     blog_obj.content = content
@@ -163,45 +147,81 @@ def update_blog(blog_obj, title, slug, image, content, status):
 
 
 def delete_blog_by_obj(blog_obj):
-    """
-    Delete the given blog post from the database.
-    """
+    """Delete the given blog post."""
     blog_obj.delete()
 
 
+# ════════════════════════════════════════
+# CONTACT QUERIES
+# ════════════════════════════════════════
+
+
 def contact_save(name, phone, email, message):
-    """
-    Save a new contact message.
-    """
+    """Save a new contact message."""
     return Contact.objects.create(name=name, phone=phone, email=email, message=message)
 
 
 def get_all_contacts():
-    """
-    Return all contact inquiries for the admin contact inquiry list.
-    """
+    """Return all contact inquiries for the admin list."""
     return Contact.objects.all().order_by("-created_at")
 
 
+# ════════════════════════════════════════
+# SERVICE QUERIES
+# ════════════════════════════════════════
+
+
 def get_all_services():
-    return Service.objects.select_related("parent_menu").all().order_by("-id")
-
-
-# queries.py
+    """Get all non-deleted services."""
+    return Service.objects.filter(is_deleted=False).order_by("-created_at")
 
 
 def get_service_by_id(service_id):
-    """Fetch a single service by ID"""
+    """Fetch a single non-deleted service by ID."""
     try:
         return Service.objects.get(id=service_id, is_deleted=False)
     except Service.DoesNotExist:
         return None
 
 
+def get_service_by_slug(slug):
+    """Fetch a single active, non-deleted service by slug."""
+    return Service.objects.filter(slug=slug, status=True, is_deleted=False).first()
+
+
+def get_services_by_menu_id(menu_id):
+    """Get active services under a given menu, ordered by title."""
+    return Service.objects.filter(
+        parent_menu_id=menu_id, is_deleted=False, status=1
+    ).order_by("title")
+
+
+# ════════════════════════════════════════
+# SERVICE INSERT QUERIES
+# ════════════════════════════════════════
+
+
+def insert_service(title, slug, parent_menu_id, image_file, content, status):
+    """Create a new service."""
+    return Service.objects.create(
+        title=title,
+        slug=slug,
+        parent_menu_id=parent_menu_id,
+        content=content,
+        status=status,
+        image=image_file,
+    )
+
+
+# ════════════════════════════════════════
+# SERVICE UPDATE QUERIES
+# ════════════════════════════════════════
+
+
 def update_service(
     service_id, title, slug, parent_menu_id, content, status, image_file=None
 ):
-    """Update an existing service"""
+    """Update an existing service."""
     service = get_service_by_id(service_id)
     if not service:
         raise ValueError("Service not found")
@@ -219,21 +239,13 @@ def update_service(
     return service
 
 
-def insert_service(title, slug, parent_menu_id, image_file, content, status):
-    """Create a new service"""
-    service = Service.objects.create(
-        title=title,
-        slug=slug,
-        parent_menu_id=parent_menu_id,
-        content=content,
-        status=status,
-        image=image_file,
-    )
-    return service
+# ════════════════════════════════════════
+# SERVICE QUERIES DELETE
+# ════════════════════════════════════════
 
 
 def delete_service(service_id):
-    """Soft delete a service"""
+    """Soft delete a service."""
     try:
         service = Service.objects.get(id=service_id)
         service.is_deleted = True
@@ -241,59 +253,3 @@ def delete_service(service_id):
         return True
     except Service.DoesNotExist:
         return False
-
-
-def get_all_services():
-    """Get all non-deleted services"""
-    return Service.objects.filter(is_deleted=False).order_by("-created_at")
-
-
-def get_service_by_id(service_id):
-    """Fetch a single service by ID"""
-    try:
-        return Service.objects.get(id=service_id, is_deleted=False)
-    except Service.DoesNotExist:
-        return None
-
-
-def get_services_by_menu_id(menu_id):
-    """Get services by menu ID"""
-    return Service.objects.filter(
-        parent_menu_id=menu_id, is_deleted=False, status=1
-    ).order_by("title")
-
-
-def get_menus_with_services():
-    """Get menus with their services"""
-    from django.db.models import Prefetch
-
-    menus = Menu.objects.filter(is_deleted=False, status=1).prefetch_related(
-        Prefetch(
-            "service_set", queryset=Service.objects.filter(is_deleted=False, status=1)
-        )
-    )
-    return menus
-
-
-def get_menus_with_services():
-
-    menus = Main_menuss.objects.filter(
-        parent_id=None,
-        is_active=1
-    ).prefetch_related(
-        'main_menuss_set'
-    )
-
-    return menus
-
-def get_menus_with_services():
-
-    menus = Main_menuss.objects.filter(
-        parent_id=None,
-        is_active=1
-    ).prefetch_related(
-        'main_menuss_set',
-        'service_set'
-    )
-
-    return menus

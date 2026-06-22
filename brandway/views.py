@@ -93,7 +93,7 @@ def service(request, id):
     services = queries.get_services_by_menu_id(id)
 
     context = {
-        "page_title": "hello - Brandway",
+        "page_title": "Brandway - Digital Marketing, Branding & Web Solutions",
         "page_description": "Discover our services",
         "services": services,
     }
@@ -105,10 +105,18 @@ def service(request, id):
 # FUNCTION 6 — SERVICE DETAILS PAGE
 # Static page render only. No dynamic data fetched yet.
 # ════════════════════════════════════════
-def service_details(request):
+def service_details(request, slug):
+    service = queries.get_service_by_slug(slug)
+
+    if not service:
+        raise Http404("Service not found")
+
     context = {
-        "page_title": "Service Details - Brandway",
-        "page_description": "Learn more about our specific service offerings at Brandway...",
+        # "page_title": f"{service.title} - Brandway",
+        # "page_description": strip_tags(service.content)[:150] if service.content else "Learn more about our specific service offerings at Brandway...",
+        "page_title": "Brandway - Digital Marketing, Branding & Web Solutions",
+        "page_description": "Discover our services",
+        "service": service,
     }
     return render(request, "frontend/services-details.html", context)
 

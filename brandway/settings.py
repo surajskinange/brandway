@@ -75,30 +75,30 @@ WSGI_APPLICATION = "brandway.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-    
-#     "default": {
-#         "ENGINE": "django.db.backends.mysql",
-#         "NAME": "u543626143_pythondjango",
-#         "USER": "u543626143_pythonusername",
-#         "PASSWORD": "Pythonsuraj@12345",
-#         "HOST": "auth-db1085.hstgr.io",
-#         "PORT": "3306",
-#     }
-# }
-
-
 DATABASES = {
     
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "brandway",
-        "USER": "root",
-        "PASSWORD": "",
-        "HOST": "localhost",
+        "NAME": "u543626143_pythondjango",
+        "USER": "u543626143_pythonusername",
+        "PASSWORD": "Pythonsuraj@12345",
+        "HOST": "auth-db1085.hstgr.io",
         "PORT": "3306",
     }
 }
+
+
+# DATABASES = {
+    
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "brandway",
+#         "USER": "root",
+#         "PASSWORD": "",
+#         "HOST": "localhost",
+#         "PORT": "3306",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
